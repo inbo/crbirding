@@ -11,3 +11,7 @@ Depends:
     R (>= 3.5)
 LazyData: true
 Config/roxygen2/version: 8.1.0
+Imports: 
+    dplyr,
+    lubridate,
+    stringr
