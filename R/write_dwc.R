@@ -26,6 +26,12 @@
 #' unlink("my_directory", recursive = TRUE)
 write_dwc <- function(data, directory, dataset_id = NULL, dataset_name = NULL,
                       license = NULL, rights_holder = NULL) {
+  # Set properties to NA when missing
+  dataset_id <- dataset_id %||% NA_character_
+  dataset_name <- dataset_name %||% NA_character_
+  license <- license %||% NA_character_
+  rights_holder <- rights_holder %||% NA_character_
+
   cleaned_data <- clean_data(data)
   ref_occurrence <- create_ref_occurrence(cleaned_data)
   # resighting_occurrence <- create_resighting_occurrence(cleaned_data)
