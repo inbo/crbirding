@@ -53,7 +53,7 @@ write_dwc <- function(data, directory, dataset_id = NULL, dataset_name = NULL,
   cli::cli_h2("Writing files")
   cli::cli_ul(c(
     "{.file {occurrence_path}}",
-    "{.file {meta_xml_path}}",
+    "{.file {meta_xml_path}}"
   ))
   if (!dir.exists(directory)) {
     dir.create(directory, recursive = TRUE)
