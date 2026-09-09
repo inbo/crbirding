@@ -13,7 +13,7 @@ clean_data <- function(data) {
       observation_lat = as.numeric(.data$observation_lat),
       observation_lon = as.numeric(.data$observation_lon),
       observation_date = lubridate::ymd(.data$observation_date),
-      observation_time = dplyr::if_else(is.na(.data$observation_time), "00:00:00", observation_time),
+      observation_time = dplyr::if_else(is.na(.data$observation_time), "00:00:00", .data$observation_time),
       observation_is_capture = dplyr::if_else(.data$observation_is_capture == "Y", TRUE, FALSE)
     ) |>
     # Add columns
@@ -65,7 +65,7 @@ clean_data <- function(data) {
         dead & (!dplyr::lag(.data$dead) | is.na(dplyr::lag(.data$dead)))
         ~ "dead"
       ),
-      .by = bird_id
+      .by = .data$bird_id
     ) |>
     # Select and order columns
     dplyr::select(
