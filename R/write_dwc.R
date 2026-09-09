@@ -20,7 +20,7 @@
 #' @family transformation functions
 #' @export
 #' @examples
-#' write_dwc(example_dataset(), directory = "my_directory")
+#' write_dwc(pied_avocet, directory = "my_directory")
 #'
 #' # Clean up (don't do this if you want to keep your files)
 #' unlink("my_directory", recursive = TRUE)

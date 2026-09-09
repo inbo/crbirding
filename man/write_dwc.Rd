@@ -42,7 +42,7 @@ The resulting files can be uploaded to an \href{https://www.gbif.org/ipt}{IPT} f
 publication to GBIF and/or OBIS.
 }
 \examples{
-write_dwc(example_dataset(), directory = "my_directory")
+write_dwc(pied_avocet, directory = "my_directory")
 
 # Clean up (don't do this if you want to keep your files)
 unlink("my_directory", recursive = TRUE)
