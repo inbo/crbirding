@@ -34,7 +34,8 @@ CSV and \code{meta.xml} files written to disk.
 And invisibly, a data frame with the transformed data.
 }
 \description{
-Transforms data downloaded from \href{https://cr-birding.org/}{CR-Birding} to a \href{https://dwc.tdwg.org/text/}{Darwin Core Archive}.
+Transforms data downloaded from \href{https://cr-birding.org/}{CR-Birding} to a
+\href{https://dwc.tdwg.org/text/}{Darwin Core Archive}.
 }
 \details{
 The resulting files can be uploaded to an \href{https://www.gbif.org/ipt}{IPT} for
