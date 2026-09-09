@@ -16,7 +16,7 @@
 #' @param rights_holder Acronym of the organization owning or managing the
 #'   rights over the data.
 #' @returns CSV and `meta.xml` files written to disk.
-#'   And invisibly, a data frame with the transformed data.
+#'   And invisibly, a list of data frames with the transformed data.
 #' @family transformation functions
 #' @export
 #' @examples
@@ -53,24 +53,36 @@ write_dwc <- function(data, directory, dataset_id = NULL, dataset_name = NULL,
     ) |>
     dplyr::arrange(.data$parentEventID, .data$eventDate)
 
+  # Create extended measurements or facts
+  emof <- create_ref_emof(ref_occurrence)
+
   # Write files
   occurrence_path <- file.path(directory, "occurrence.csv")
   meta_xml_path <- file.path(directory, "meta.xml")
+  emof_path <- file.path(directory, "emof.csv")
   cli::cli_h2("Writing files")
   cli::cli_ul(c(
     "{.file {occurrence_path}}",
-    "{.file {meta_xml_path}}"
+    "{.file {meta_xml_path}}",
+    "{.file {emof_path}}"
   ))
   if (!dir.exists(directory)) {
     dir.create(directory, recursive = TRUE)
   }
   readr::write_csv(occurrence, occurrence_path, na = "")
+  readr::write_csv(emof, emof_path, na = "")
   file.copy(
     system.file("extdata", "meta.xml", package = "crbirding"), # Static meta.xml
     meta_xml_path
   )
 
+  # Return list with Darwin Core data invisibly
+  return <- list(
+    occurrence = dplyr::as_tibble(occurrence),
+    emof = dplyr::as_tibble(emof)
+  )
+
   # Return Darwin Core data invisibly
-  invisible(dplyr::as_tibble(occurrence))
+  invisible(return)
 }
 

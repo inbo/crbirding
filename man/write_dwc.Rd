@@ -31,7 +31,7 @@ rights over the data.}
 }
 \value{
 CSV and \code{meta.xml} files written to disk.
-And invisibly, a data frame with the transformed data.
+And invisibly, a list of data frames with the transformed data.
 }
 \description{
 Transforms data downloaded from \href{https://cr-birding.org/}{CR-Birding} to a
