@@ -28,12 +28,12 @@ write_dwc <- function(data, directory, dataset_id = NULL, dataset_name = NULL,
                       license = NULL, rights_holder = NULL) {
   cleaned_data <- clean_data(data)
   ref_occurrence <- create_ref_occurrence(cleaned_data)
-  resighting_occurrence <- create_resighting_occurrence(cleaned_data)
+  # resighting_occurrence <- create_resighting_occurrence(cleaned_data)
 
   # Bind the occurrence df from the helper functions
   occurrence <-
     ref_occurrence |>
-    dplyr::bind_rows(resighting_occurrence) |>
+    # dplyr::bind_rows(resighting_occurrence) |>
     dplyr::mutate(
       # DATASET-LEVEL
       type = "Event",
