@@ -16,6 +16,7 @@ Imports:
     dplyr,
     lubridate,
     readr,
+    rlang,
     stringr
 Suggests: 
     testthat (>= 3.0.0)
