@@ -8,7 +8,7 @@
 #' \dontrun{
 #' # The data in pied_avocet was created with the code below
 #' pied_avocet <-
-#'  read.csv(system.file("data", "crbirding_export_project_37.csv", package = "crbirding"))
+#'  read.csv(system.file("extdata", "crbirding_export_project_37.csv", package = "crbirding"))
 #' usethis::use_data(pied_avocet, overwrite = TRUE)
 #' }
 "pied_avocet"
