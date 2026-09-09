@@ -6,9 +6,7 @@
 #' The resulting files can be uploaded to an [IPT](https://www.gbif.org/ipt) for
 #' publication to GBIF and/or OBIS.
 #'
-#' @param data A data frame with all observation data from a certain CR-birding
-#' project, downloaded from [CR-Birding](https://submit.cr-birding.org/). It is
-#' expected to be in English.
+#' @inheritParams clean_data
 #' @param directory Path to local directory to write files to.
 #' @param dataset_id Identifier for the dataset.
 #' @param dataset_name Title of the dataset.

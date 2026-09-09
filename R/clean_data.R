@@ -1,3 +1,10 @@
+#' Clean data
+#'
+#' @param data A data frame with all observation data from a certain CR-birding
+#' project, downloaded from [CR-Birding](https://submit.cr-birding.org/). It is
+#' expected to be in English.
+#' @returns A data frame with converted types, added columns and filtered rows.
+#' @noRd
 clean_data <- function(data) {
   cleaned_data <-
   data |>
