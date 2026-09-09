@@ -8,8 +8,8 @@
 create_ref_occurrence <- function(cleaned_data) {
   cleaned_data |>
     # Ringing event is the first observation that is either a capture or a capture+release
-    dplyr::filter(observation_type %in% c("capture", "capture+release")) |>
-    dplyr::slice_head(n = 1, by = bird_id) |>
+    dplyr::filter(.data$observation_type %in% c("capture", "capture+release")) |>
+    dplyr::slice_head(n = 1, by = .data$bird_id) |>
     dplyr::mutate(
       .keep = "none",
       basisOfRecord = "HumanObservation",
@@ -18,35 +18,35 @@ create_ref_occurrence <- function(cleaned_data) {
         sep = "_" # Same as eventID
       ),
       sex = dplyr::case_when(
-        bird_sex == "F" ~ "female",
-        bird_sex == "M" ~ "male",
-        bird_sex == "U" ~ "unknown"
+        .data$bird_sex == "F" ~ "female",
+        .data$bird_sex == "M" ~ "male",
+        .data$bird_sex == "U" ~ "unknown"
       ),
       lifeStage = dplyr::case_when(
-        bird_age_ringing == "pullus" ~ "pullus",
-        bird_age_ringing == "1 cy" ~ "1st calendar year",
-        bird_age_ringing == "2 cy" ~ "2st calendar year",
-        bird_age_ringing == "3 cy" ~ "3rd calendar year",
-        bird_age_ringing == "4 cy" ~ "4th calendar year",
-        bird_age_ringing == ">4 cy" ~ ">4th calendar year",
-        bird_age_ringing == "5 cy" ~ "5th calendar year",
-        bird_age_ringing == "unknown" ~ "unknown",
+        .data$bird_age_ringing == "pullus" ~ "pullus",
+        .data$bird_age_ringing == "1 cy" ~ "1st calendar year",
+        .data$bird_age_ringing == "2 cy" ~ "2st calendar year",
+        .data$bird_age_ringing == "3 cy" ~ "3rd calendar year",
+        .data$bird_age_ringing == "4 cy" ~ "4th calendar year",
+        .data$bird_age_ringing == ">4 cy" ~ ">4th calendar year",
+        .data$bird_age_ringing == "5 cy" ~ "5th calendar year",
+        .data$bird_age_ringing == "unknown" ~ "unknown",
         TRUE ~ "unknown"
       ),
       occurrenceStatus = "present",
-      organism_id = bird_id,
+      organism_id = .data$bird_id,
       eventID = paste(
         .data$bird_id, .data$bird_shorthand_clean, "start",
         sep = "_" # Same as occurrenceID
       ),
       parentEventID = paste(.data$bird_id, .data$bird_shorthand_clean, sep = "_"),
       eventType = "ringing",
-      eventDate = observation_datetime,
+      eventDate = .data$observation_datetime,
       samplingProtocol = "ringing",
-      decimalLatitude = observation_lat,
-      decimalLongitude = observation_lon,
+      decimalLatitude = .data$observation_lat,
+      decimalLongitude = .data$observation_lon,
       identificationVerificationStatus = "verified by expert",
-      scientificName = bird_scientific_name,
+      scientificName = .data$bird_scientific_name,
       kingdom = "Animalia"
     )
 }
