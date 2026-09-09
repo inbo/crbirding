@@ -34,7 +34,7 @@ create_ref_occurrence <- function(cleaned_data) {
         TRUE ~ "unknown"
       ),
       occurrenceStatus = "present",
-      organism_id = .data$bird_id,
+      organismID = .data$bird_id,
       eventID = paste(
         .data$bird_id, .data$bird_shorthand_clean, "start",
         sep = "_" # Same as occurrenceID
