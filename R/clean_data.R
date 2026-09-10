@@ -76,6 +76,7 @@ clean_data <- function(data) {
       "bird_scientific_name",
       "bird_sex",
       "bird_age_ringing",
+      "bird_species_euring",
       "observation_type",
       "observation_is_capture",
       "revalidation_release",
