@@ -30,7 +30,7 @@ create_resighting_occurrence <- function(cleaned_data, ref_ids) {
       parentEventID = paste(.data$bird_id, .data$bird_shorthand_clean, sep = "_"),
       eventType = "observation",
       eventDate = observation_datetime,
-      samplingProtocol = "observation",
+      samplingProtocol = "bird_ring",
       decimalLatitude = observation_lat,
       decimalLongitude = observation_lon,
       identificationVerificationStatus = "verified by expert",
