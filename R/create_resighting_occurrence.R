@@ -24,6 +24,10 @@ create_resighting_occurrence <- function(cleaned_data, ref_ids) {
         .data$custom.status.full.grown.bird == "in colony, not breeding" ~ "adult",
         .data$custom.status.full.grown.bird == "unknown or unrecorded" ~ "unknown"
       ),
+      reproductiveCondition = dplyr::recode_values(
+        .data$custom.status.full.grown.bird,
+        "breeding bird" ~ "reproductive",
+      ),
       occurrenceStatus = "present",
       organismID = .data$bird_id,
       eventID = as.character(.data$observation_id),

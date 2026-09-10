@@ -33,6 +33,10 @@ create_ref_occurrence <- function(cleaned_data) {
         .data$bird_age_ringing == "unknown" ~ "unknown",
         TRUE ~ "unknown"
       ),
+      reproductiveCondition = dplyr::recode_values(
+        .data$custom.status.full.grown.bird,
+        "breeding bird" ~ "reproductive",
+      ),
       occurrenceStatus = "present",
       organismID = .data$bird_id,
       eventID = paste(

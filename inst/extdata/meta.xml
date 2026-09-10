@@ -15,18 +15,19 @@
     <field index="8" term="http://rs.tdwg.org/dwc/terms/occurrenceID"/>
     <field index="9" term="http://rs.tdwg.org/dwc/terms/sex"/>
     <field index="10" term="http://rs.tdwg.org/dwc/terms/lifeStage"/>
-    <field index="11" term="http://rs.tdwg.org/dwc/terms/occurrenceStatus"/>
-    <field index="12" term="http://rs.tdwg.org/dwc/terms/organismID"/>
-    <field index="13" term="http://rs.tdwg.org/dwc/terms/eventID"/>
-    <field index="14" term="http://rs.tdwg.org/dwc/terms/parentEventID"/>
-    <field index="15" term="http://rs.tdwg.org/dwc/terms/eventType"/>
-    <field index="16" term="http://rs.tdwg.org/dwc/terms/eventDate"/>
-    <field index="17" term="http://rs.tdwg.org/dwc/terms/samplingProtocol"/>
-    <field index="18" term="http://rs.tdwg.org/dwc/terms/decimalLatitude"/>
-    <field index="19" term="http://rs.tdwg.org/dwc/terms/decimalLongitude"/>
-    <field index="20" term="http://rs.tdwg.org/dwc/terms/identificationVerificationStatus"/>
-    <field index="21" term="http://rs.tdwg.org/dwc/terms/scientificName"/>
-    <field index="22" term="http://rs.tdwg.org/dwc/terms/kingdom"/>
+    <field index="11" term="http://rs.tdwg.org/dwc/terms/reproductiveCondition"/>
+    <field index="12" term="http://rs.tdwg.org/dwc/terms/occurrenceStatus"/>
+    <field index="13" term="http://rs.tdwg.org/dwc/terms/organismID"/>
+    <field index="14" term="http://rs.tdwg.org/dwc/terms/eventID"/>
+    <field index="15" term="http://rs.tdwg.org/dwc/terms/parentEventID"/>
+    <field index="16" term="http://rs.tdwg.org/dwc/terms/eventType"/>
+    <field index="17" term="http://rs.tdwg.org/dwc/terms/eventDate"/>
+    <field index="18" term="http://rs.tdwg.org/dwc/terms/samplingProtocol"/>
+    <field index="19" term="http://rs.tdwg.org/dwc/terms/decimalLatitude"/>
+    <field index="20" term="http://rs.tdwg.org/dwc/terms/decimalLongitude"/>
+    <field index="21" term="http://rs.tdwg.org/dwc/terms/identificationVerificationStatus"/>
+    <field index="22" term="http://rs.tdwg.org/dwc/terms/scientificName"/>
+    <field index="23" term="http://rs.tdwg.org/dwc/terms/kingdom"/>
   </core>
     <extension encoding="UTF-8" fieldsTerminatedBy="," linesTerminatedBy="\n" fieldsEnclosedBy="&quot;" ignoreHeaderLines="1" rowType="http://rs.iobis.org/obis/terms/ExtendedMeasurementOrFact">
     <files>
