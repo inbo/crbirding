@@ -33,7 +33,11 @@ create_resighting_occurrence <- function(cleaned_data, ref_ids) {
       organismID = .data$bird_id,
       eventID = as.character(.data$observation_id),
       parentEventID = paste(.data$bird_id, .data$bird_shorthand_clean, sep = "_"),
-      eventType = "observation",
+      eventType = ifelse(
+        !is.na(.data$observation_type),
+        .data$observation_type,
+        "observation"
+        ),
       eventDate = .data$observation_datetime,
       samplingProtocol = "bird_ring",
       decimalLatitude = .data$observation_lat,
