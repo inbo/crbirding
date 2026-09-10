@@ -47,6 +47,7 @@ create_ref_occurrence <- function(cleaned_data) {
       decimalLongitude = .data$observation_lon,
       identificationVerificationStatus = "verified by expert",
       scientificName = .data$bird_scientific_name,
-      kingdom = "Animalia"
+      kingdom = "Animalia",
+      observation_id = .data$observation_id
     )
 }
