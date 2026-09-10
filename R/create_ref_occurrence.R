@@ -17,21 +17,23 @@ create_ref_occurrence <- function(cleaned_data) {
         .data$bird_id, .data$bird_shorthand_clean, "start",
         sep = "_" # Same as eventID
       ),
-      sex = dplyr::case_when(
-        .data$bird_sex == "F" ~ "female",
-        .data$bird_sex == "M" ~ "male",
-        .data$bird_sex == "U" ~ "unknown"
+      sex = dplyr::recode_values(
+        .data$bird_sex,
+        "F" ~ "female",
+        "M" ~ "male",
+        "U" ~ "unknown"
       ),
-      lifeStage = dplyr::case_when(
-        .data$bird_age_ringing == "pullus" ~ "pullus",
-        .data$bird_age_ringing == "1 cy" ~ "1st calendar year",
-        .data$bird_age_ringing == "2 cy" ~ "2st calendar year",
-        .data$bird_age_ringing == "3 cy" ~ "3rd calendar year",
-        .data$bird_age_ringing == "4 cy" ~ "4th calendar year",
-        .data$bird_age_ringing == ">4 cy" ~ ">4th calendar year",
-        .data$bird_age_ringing == "5 cy" ~ "5th calendar year",
-        .data$bird_age_ringing == "unknown" ~ "unknown",
-        TRUE ~ "unknown"
+      lifeStage = dplyr::recode_values(
+        .data$bird_age_ringing,
+        "pullus" ~ "pullus",
+        "1 cy" ~ "1st calendar year",
+        "2 cy" ~ "2st calendar year",
+        "3 cy" ~ "3rd calendar year",
+        "4 cy" ~ "4th calendar year",
+        ">4 cy" ~ ">4th calendar year",
+        "5 cy" ~ "5th calendar year",
+        "unknown" ~ "unknown",
+        default = "unknown"
       ),
       reproductiveCondition = dplyr::recode_values(
         .data$custom.status.full.grown.bird,

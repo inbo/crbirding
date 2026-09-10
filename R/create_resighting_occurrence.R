@@ -16,13 +16,14 @@ create_resighting_occurrence <- function(cleaned_data, ref_ids) {
       basisOfRecord = "HumanObservation",
       occurrenceID = as.character(.data$observation_id),
       sex = NA_character_,
-      lifeStage = dplyr::case_when( # NA_character in movepub
-        .data$custom.status.full.grown.bird == "not applicable (chick)" ~ "pullus",
-        .data$custom.status.full.grown.bird == "breeding bird" ~ "adult",
-        .data$custom.status.full.grown.bird == "not a breeding bird" ~ "adult",
-        .data$custom.status.full.grown.bird == "in colony, unknown if breeding" ~ "adult",
-        .data$custom.status.full.grown.bird == "in colony, not breeding" ~ "adult",
-        .data$custom.status.full.grown.bird == "unknown or unrecorded" ~ "unknown"
+      lifeStage = dplyr::recode_values(
+        .data$custom.status.full.grown.bird,
+        "not applicable (chick)" ~ "pullus",
+        "breeding bird" ~ "adult",
+        "not a breeding bird" ~ "adult",
+        "in colony, unknown if breeding" ~ "adult",
+        "in colony, not breeding" ~ "adult",
+        "unknown or unrecorded" ~ "unknown"
       ),
       reproductiveCondition = dplyr::recode_values(
         .data$custom.status.full.grown.bird,
