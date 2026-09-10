@@ -10,7 +10,7 @@
 create_resighting_occurrence <- function(cleaned_data, ref_ids) {
   cleaned_data |>
     # Ringing event is the first observation that is either a capture or a capture+release
-    dplyr::filter(!observation_id %in% ref_ids) |>
+    dplyr::filter(!.data$observation_id %in% ref_ids) |>
     dplyr::mutate(
       .keep = "none",
       basisOfRecord = "HumanObservation",
@@ -34,12 +34,12 @@ create_resighting_occurrence <- function(cleaned_data, ref_ids) {
       eventID = as.character(.data$observation_id),
       parentEventID = paste(.data$bird_id, .data$bird_shorthand_clean, sep = "_"),
       eventType = "observation",
-      eventDate = observation_datetime,
+      eventDate = .data$observation_datetime,
       samplingProtocol = "bird_ring",
-      decimalLatitude = observation_lat,
-      decimalLongitude = observation_lon,
+      decimalLatitude = .data$observation_lat,
+      decimalLongitude = .data$observation_lon,
       identificationVerificationStatus = "verified by expert",
-      scientificName = bird_scientific_name,
+      scientificName = .data$bird_scientific_name,
       kingdom = "Animalia"
     )
 }
