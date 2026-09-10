@@ -43,7 +43,7 @@ clean_data <- function(data) {
     # Sort by bird_id, datetime and capture (important for mutate(.by) later)
     dplyr::arrange(.data$bird_id, .data$observation_datetime, dplyr::desc(.data$observation_is_capture)) |>
     # Add row number per group
-    dplyr::mutate(row_number = dplyr::row_number(), .by = .data$bird_id) |>
+    dplyr::mutate(row_number = dplyr::row_number(), .by = "bird_id") |>
     # Add observation type, see https://github.com/inbo/bird-tracking/issues/236
     dplyr::mutate(
       observation_type = dplyr::case_when(
@@ -65,7 +65,7 @@ clean_data <- function(data) {
         dead & (!dplyr::lag(.data$dead) | is.na(dplyr::lag(.data$dead)))
         ~ "dead"
       ),
-      .by = .data$bird_id
+      .by = "bird_id"
     ) |>
     # Select and order columns
     dplyr::select(
