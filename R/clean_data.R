@@ -10,8 +10,8 @@ clean_data <- function(data) {
   data |>
     # Convert types
     dplyr::mutate(
-      observation_lat = round(as.numeric(.data$observation_lat), digits = 5),
-      observation_lon = round(as.numeric(.data$observation_lon), digits = 5),
+      observation_lat = round(as.numeric(.data$observation_lat), digits = 6),
+      observation_lon = round(as.numeric(.data$observation_lon), digits = 6),
       observation_date = lubridate::ymd(.data$observation_date),
       observation_time = dplyr::if_else(is.na(.data$observation_time), "00:00:00", .data$observation_time),
       observation_is_capture = dplyr::if_else(.data$observation_is_capture == "Y", TRUE, FALSE)
