@@ -8,6 +8,19 @@ License: MIT + file LICENSE
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
 Depends: 
-    R (>= 3.5)
+    R (>= 4.1.0)
 LazyData: true
 Config/roxygen2/version: 8.1.0
+Imports: 
+    cli,
+    dplyr,
+    lubridate,
+    readr,
+    rlang,
+    stringr
+Suggests: 
+    curl,
+    purrr,
+    testthat (>= 3.0.0),
+    xml2
+Config/testthat/edition: 3
