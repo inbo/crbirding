@@ -43,7 +43,12 @@ create_resighting_occurrence <- function(cleaned_data, ref_ids) {
       samplingProtocol = "bird_ring",
       decimalLatitude = .data$observation_lat,
       decimalLongitude = .data$observation_lon,
-      identificationVerificationStatus = "verified by expert",
+      identificationVerificationStatus =
+        ifelse(
+          .data$observation_status == "trusted",
+          "verified by expert",
+          NA_character_
+        ),
       scientificNameID = paste0(
         "https://euring.org/edb/species-maps/sp",
         .data$bird_species_euring,
