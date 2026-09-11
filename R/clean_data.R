@@ -34,6 +34,16 @@ clean_data <- function(data) {
       ),
       bird_shorthand_clean = stringr::str_remove(
         stringr::str_remove(.data$bird_shorthand, "^[A-Za-z]-"), stringr::fixed(".")
+      ),
+      observation_vitality = dplyr::recode_values(
+        .data$observation_condition,
+        "alive and healthy" ~ "alive",
+        "released after revalidation" ~ "alive",
+        "sick or wounded" ~ "alive",
+        "sick or wounded (taken into captivity)" ~ "alive",
+        "dead (fresh; less than a week)" ~ "dead",
+        "dead (more than a week)" ~ "dead",
+        "dead (unknown if it is freshly dead)" ~ "dead",
       )
     ) |>
     # Exclude unwanted data
@@ -88,6 +98,7 @@ clean_data <- function(data) {
       "observation_lon",
       "observation_region_euring",
       "observation_condition",
+      "observation_vitality",
       "custom.status.full.grown.bird",
       "inserted",
       "observation_status",
