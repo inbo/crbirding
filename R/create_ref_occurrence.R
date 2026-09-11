@@ -52,6 +52,7 @@ create_ref_occurrence <- function(cleaned_data) {
       samplingProtocol = "ringing",
       decimalLatitude = .data$observation_lat,
       decimalLongitude = .data$observation_lon,
+      geodeticDatum = "WGS84",
       identificationVerificationStatus = "verified by expert",
       scientificNameID = paste0(
         "https://euring.org/edb/species-maps/sp",

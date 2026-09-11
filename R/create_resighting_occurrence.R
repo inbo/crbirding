@@ -43,6 +43,7 @@ create_resighting_occurrence <- function(cleaned_data, ref_ids) {
       samplingProtocol = "bird_ring",
       decimalLatitude = .data$observation_lat,
       decimalLongitude = .data$observation_lon,
+      geodeticDatum = "WGS84",
       identificationVerificationStatus =
         ifelse(
           .data$observation_status == "trusted",
