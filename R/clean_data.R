@@ -39,6 +39,7 @@ clean_data <- function(data) {
         .data$observation_condition,
         "alive and healthy" ~ "alive",
         "released after revalidation" ~ "alive",
+        "disabled (e.g. missing part of a leg, pinioned)" ~ "alive",
         "sick or wounded" ~ "alive",
         "sick or wounded (taken into captivity)" ~ "alive",
         "dead (fresh; less than a week)" ~ "dead",
