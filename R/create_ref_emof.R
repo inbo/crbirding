@@ -32,7 +32,7 @@ create_ref_emof <- function(ref_occurrence) {
       measurementUnitID = "http://vocab.nerc.ac.uk/collection/P06/current/XXXX/"
     )
 
-  lifestage <-
+  bird_age <-
     ref_occurrence |>
     dplyr::mutate(
       .keep = "none",
@@ -57,15 +57,15 @@ create_ref_emof <- function(ref_occurrence) {
     )
 
   emof <-
-    dplyr::bind_rows(sex, lifestage) |>
+    dplyr::bind_rows(sex, bird_age) |>
     dplyr::arrange(.data$occurrenceID)
 
   # Remove the measurementType if all values of that type are NA in ref_occurrence
   if (all(is.na(ref_occurrence$sex))) {
     emof <- dplyr::filter(emof, .data$measurementType != "sex")
   }
-  if (all(is.na(ref_occurrence$lifeStage))) {
-    emof <- dplyr::filter(emof, .data$measurementType != "life stage")
+  if (all(is.na(ref_occurrence$bird_age))) {
+    emof <- dplyr::filter(emof, .data$measurementType != "bird age")
   }
 
   return(emof)
