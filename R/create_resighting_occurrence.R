@@ -44,7 +44,7 @@ create_resighting_occurrence <- function(cleaned_data, ref_ids) {
         "observation"
       ),
       eventDate = .data$observation_datetime,
-      samplingProtocol = "bird_ring",
+      samplingProtocol = "bird-ring",
       eventRemarks = paste(
         "observation conditions:", .data$observation_condition
       ),
