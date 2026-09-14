@@ -7,8 +7,11 @@
 #' @noRd
 create_ref_occurrence <- function(cleaned_data) {
   cleaned_data |>
-    # Ringing event is the first observation that is either a capture or a capture+release
-    dplyr::filter(.data$observation_type %in% c("capture", "capture+release")) |>
+    # Ringing event is the first observation that is either a capture or a
+    # capture+release
+    dplyr::filter(
+      .data$observation_type %in% c("capture", "capture+release")
+    ) |>
     dplyr::slice_head(n = 1, by = bird_id) |>
     dplyr::mutate(
       .keep = "none",
@@ -40,7 +43,10 @@ create_ref_occurrence <- function(cleaned_data) {
         .data$bird_id, .data$bird_shorthand_clean, "start",
         sep = "_" # Same as occurrenceID
       ),
-      parentEventID = paste(.data$bird_id, .data$bird_shorthand_clean, sep = "_"),
+      parentEventID = paste(
+        .data$bird_id, .data$bird_shorthand_clean,
+        sep = "_"
+      ),
       eventType = "ringing",
       eventDate = .data$observation_datetime,
       samplingProtocol = "ringing",
