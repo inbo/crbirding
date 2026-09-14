@@ -40,6 +40,8 @@
 #'   Sex and bird age are additionally provided in an Extended Measurement Or
 #'   Facts extension, where  the original values of `bird_age_ringing` are
 #'   retained.
+#' - Records without `bird_id` or with `observation_status` equal to
+#'   "impossible" or "unlikely" are excluded.
 #' - Parameters are used to set the following record-level terms:
 #'   - `dwc:datasetID`: `dataset_id`.
 #'   - `dwc:datasetName`: `dataset_name`.

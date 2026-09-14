@@ -64,6 +64,8 @@ species-dependent.
 Sex and bird age are additionally provided in an Extended Measurement Or
 Facts extension, where  the original values of \code{bird_age_ringing} are
 retained.
+\item Records without \code{bird_id} or with \code{observation_status} equal to
+"impossible" or "unlikely" are excluded.
 \item Parameters are used to set the following record-level terms:
 \itemize{
 \item \code{dwc:datasetID}: \code{dataset_id}.
