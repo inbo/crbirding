@@ -53,11 +53,7 @@ create_resighting_occurrence <- function(cleaned_data, ref_ids) {
           "verified by expert",
           NA_character_
         ),
-      scientificNameID = paste0(
-        "https://euring.org/edb/species-maps/sp",
-        .data$bird_species_euring,
-        ".htm"
-      ),
+      scientificNameID = .data$bird_species_euring,
       scientificName = .data$bird_scientific_name,
       kingdom = "Animalia"
     )
