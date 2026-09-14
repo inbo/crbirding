@@ -33,7 +33,7 @@ create_ref_occurrence <- function(cleaned_data) {
         .data$custom.status.full.grown.bird,
         "breeding bird" ~ "reproductive",
       ),
-      vitality = .data$observation_vitality,
+      vitality = ifelse(.data$dead, "dead", "alive"),
       occurrenceStatus = "present",
       organismID = .data$bird_id,
       eventID = paste(

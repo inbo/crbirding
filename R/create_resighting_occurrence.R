@@ -29,7 +29,7 @@ create_resighting_occurrence <- function(cleaned_data, ref_ids) {
         .data$custom.status.full.grown.bird,
         "breeding bird" ~ "reproductive",
       ),
-      vitality = .data$observation_vitality,
+      vitality = ifelse(.data$dead, "dead", "alive"),
       occurrenceStatus = "present",
       organismID = .data$bird_id,
       eventID = as.character(.data$observation_id),
