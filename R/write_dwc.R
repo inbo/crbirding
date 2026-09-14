@@ -37,10 +37,13 @@ write_dwc <- function(data, directory, dataset_id = NULL, dataset_name = NULL,
   ref_ids <- dplyr::pull(ref_occurrence, observation_id)
   resighting_occurrence <- create_resighting_occurrence(cleaned_data, ref_ids)
 
+  # Create extended measurements or facts
+  emof <- create_ref_emof(ref_occurrence)
+
   # Bind the occurrence df from the helper functions
   occurrence <-
     ref_occurrence |>
-    dplyr::select(-observation_id) |>
+    dplyr::select(-observation_id, -bird_age_ringing) |>
     dplyr::bind_rows(resighting_occurrence) |>
     dplyr::mutate(
       # DATASET-LEVEL
@@ -54,9 +57,6 @@ write_dwc <- function(data, directory, dataset_id = NULL, dataset_name = NULL,
       .before = "basisOfRecord"
     ) |>
     dplyr::arrange(.data$parentEventID, .data$eventDate)
-
-  # Create extended measurements or facts
-  emof <- create_ref_emof(ref_occurrence)
 
   # Write files
   occurrence_path <- file.path(directory, "occurrence.csv")

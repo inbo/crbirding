@@ -37,19 +37,21 @@ create_ref_emof <- function(ref_occurrence) {
     dplyr::mutate(
       .keep = "none",
       occurrenceID = .data$occurrenceID,
-      measurementType = "life stage",
-      measurementTypeID =
-        "http://vocab.nerc.ac.uk/collection/P01/current/LSTAGE01/",
-      measurementValue = .data$lifeStage, # Value as is
-      measurementValueID = dplyr::recode_values(
-        .data$lifeStage,
-        "adult" ~ "http://vocab.nerc.ac.uk/collection/S11/current/S1116/",
-        "subadult" ~ "http://vocab.nerc.ac.uk/collection/S11/current/S120/", # sub-adult
-        "juvenile" ~ "http://vocab.nerc.ac.uk/collection/S11/current/S1127/",
-        "unknown" ~ "http://vocab.nerc.ac.uk/collection/S11/current/S1152/", # indeterminate
-        NA ~ "http://vocab.nerc.ac.uk/collection/S11/current/S1131/", # not specified
-        default = NA_character_ # Don't map other values
+      measurementType = "bird age",
+      measurementTypeID = NA_character_, # chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/https://euring.org/files/documents/data_and_codes/code-manuel_new-euring_1979.pdf
+      measurementValue = dplyr::recode_values(
+        .data$bird_age_ringing,
+        "pullus" ~ "pullus",
+        "1 cy" ~ "1st calendar year",
+        "2 cy" ~ "2st calendar year",
+        "3 cy" ~ "3rd calendar year",
+        "4 cy" ~ "4th calendar year",
+        ">4 cy" ~ ">4th calendar year",
+        "5 cy" ~ "5th calendar year",
+        "unknown" ~ "unknown",
+        default = "unknown"
       ),
+      measurementValueID = NA_character_,
       measurementUnit = NA_character_,
       measurementUnitID = "http://vocab.nerc.ac.uk/collection/P06/current/XXXX/"
     )

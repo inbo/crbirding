@@ -25,16 +25,10 @@ create_ref_occurrence <- function(cleaned_data) {
       ),
       lifeStage = dplyr::recode_values(
         .data$bird_age_ringing,
-        "pullus" ~ "pullus",
-        "1 cy" ~ "1st calendar year",
-        "2 cy" ~ "2st calendar year",
-        "3 cy" ~ "3rd calendar year",
-        "4 cy" ~ "4th calendar year",
-        ">4 cy" ~ ">4th calendar year",
-        "5 cy" ~ "5th calendar year",
-        "unknown" ~ "unknown",
-        default = "unknown"
+        "pullus" ~ "juvenile",
+        "unknown" ~ "unknown"
       ),
+      bird_age_ringing = .data$bird_age_ringing, # Keep original value for emof
       reproductiveCondition = dplyr::recode_values(
         .data$custom.status.full.grown.bird,
         "breeding bird" ~ "reproductive",
