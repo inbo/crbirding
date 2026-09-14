@@ -41,6 +41,9 @@ create_resighting_occurrence <- function(cleaned_data, ref_ids) {
         ),
       eventDate = .data$observation_datetime,
       samplingProtocol = "bird_ring",
+      eventRemarks = paste(
+        "observation condtions:", .data$observation_condition
+      ),
       decimalLatitude = .data$observation_lat,
       decimalLongitude = .data$observation_lon,
       geodeticDatum = "WGS84",

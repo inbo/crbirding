@@ -46,6 +46,7 @@ test_that("write_dwc() returns the expected Darwin Core terms as columns", {
       "eventType",
       "eventDate",
       "samplingProtocol",
+      "eventRemarks",
       "decimalLatitude",
       "decimalLongitude",
       "geodeticDatum",

@@ -50,6 +50,10 @@ create_ref_occurrence <- function(cleaned_data) {
       eventType = "ringing",
       eventDate = .data$observation_datetime,
       samplingProtocol = "ringing",
+      eventRemarks = paste(
+        "observation condtions:", .data$observation_condition, "| ",
+        "bird age:", .data$bird_age_ringing
+      ),
       decimalLatitude = .data$observation_lat,
       decimalLongitude = .data$observation_lon,
       geodeticDatum = "WGS84",
