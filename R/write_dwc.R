@@ -19,6 +19,39 @@
 #'   And invisibly, a list of data frames with the transformed data.
 #' @family transformation functions
 #' @export
+#' @section Transformation details:
+#' This function transforms data to:
+#' - An [Occurrence core](
+#'   https://rs.gbif.org/core/dwc_occurrence_2022-02-02.xml).
+#' - An [Extended Measurement Or Facts extension](
+#'   https://rs.gbif.org/extension/obis/extended_measurement_or_fact_2023-08-28.xml)
+#' - A `meta.xml` file.
+#'
+#' Key features of the Darwin Core transformation:
+#' - Bird + colour ring combinations (bird_id+bird_shorthand associations) are
+#'   parent events, with ringing and resightings as child events.
+#'   No information about the parent event is provided other than its ID,
+#'   meaning that data can be expressed in an Occurrence core with one row per
+#'   observation and `parentEventID` shared by all occurrences in a deployment.
+#' - The ringing event often contains metadata about the animal (sex, bird age).
+#'   Bird age is conservatively mapped to `lifeStage`, with pullus being mapped
+#'   to juvenile. Other values are not mapped, as life stage is
+#'   species-dependent.
+#'   Sex and bird age are additionally provided in an Extended Measurement Or
+#'   Facts extension, where  the original values of `bird_age_ringing` are
+#'   retained.
+#' - Parameters are used to set the following record-level terms:
+#'   - `dwc:datasetID`: `dataset_id`.
+#'   - `dwc:datasetName`: `dataset_name`.
+#'   - `dcterms:license`: `license`.
+#'   - `dcterms:rightsHolder`: `rights_holder`.
+#'
+#' @section Required data:
+#' The source data should have at least the following fields:
+#'
+#' `observation_id`, `observation_date`, `observation_lat`, `obervation_lon`,
+#' `bird_species`, `bird_id`, `bird_shorthand`, `observation_is_capture`,
+#' `observation_status`.
 #' @examples
 #' write_dwc(pied_avocet, directory = "my_directory")
 #'

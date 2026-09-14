@@ -41,6 +41,48 @@ Transforms data downloaded from \href{https://cr-birding.org/}{CR-Birding} to a
 The resulting files can be uploaded to an \href{https://www.gbif.org/ipt}{IPT} for
 publication to GBIF and/or OBIS.
 }
+\section{Transformation details}{
+
+This function transforms data to:
+\itemize{
+\item An \href{https://rs.gbif.org/core/dwc_occurrence_2022-02-02.xml}{Occurrence core}.
+\item An \href{https://rs.gbif.org/extension/obis/extended_measurement_or_fact_2023-08-28.xml}{Extended Measurement Or Facts extension}
+\item A \code{meta.xml} file.
+}
+
+Key features of the Darwin Core transformation:
+\itemize{
+\item Bird + colour ring combinations (bird_id+bird_shorthand associations) are
+parent events, with ringing and resightings as child events.
+No information about the parent event is provided other than its ID,
+meaning that data can be expressed in an Occurrence core with one row per
+observation and \code{parentEventID} shared by all occurrences in a deployment.
+\item The ringing event often contains metadata about the animal (sex, bird age).
+Bird age is conservatively mapped to \code{lifeStage}, with pullus being mapped
+to juvenile. Other values are not mapped, as life stage is
+species-dependent.
+Sex and bird age are additionally provided in an Extended Measurement Or
+Facts extension, where  the original values of \code{bird_age_ringing} are
+retained.
+\item Parameters are used to set the following record-level terms:
+\itemize{
+\item \code{dwc:datasetID}: \code{dataset_id}.
+\item \code{dwc:datasetName}: \code{dataset_name}.
+\item \code{dcterms:license}: \code{license}.
+\item \code{dcterms:rightsHolder}: \code{rights_holder}.
+}
+}
+}
+
+\section{Required data}{
+
+The source data should have at least the following fields:
+
+\code{observation_id}, \code{observation_date}, \code{observation_lat}, \code{obervation_lon},
+\code{bird_species}, \code{bird_id}, \code{bird_shorthand}, \code{observation_is_capture},
+\code{observation_status}.
+}
+
 \examples{
 write_dwc(pied_avocet, directory = "my_directory")
 
