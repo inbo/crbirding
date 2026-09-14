@@ -18,12 +18,7 @@ create_resighting_occurrence <- function(cleaned_data, ref_ids) {
       sex = NA_character_,
       lifeStage = dplyr::recode_values(
         .data$custom.status.full.grown.bird,
-        "not applicable (chick)" ~ "pullus",
-        "breeding bird" ~ "adult",
-        "not a breeding bird" ~ "adult",
-        "in colony, unknown if breeding" ~ "adult",
-        "in colony, not breeding" ~ "adult",
-        "unknown or unrecorded" ~ "unknown"
+        "not applicable (chick)" ~ "juvenile"
       ),
       reproductiveCondition = dplyr::recode_values(
         .data$custom.status.full.grown.bird,
