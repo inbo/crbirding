@@ -23,7 +23,7 @@ create_resighting_occurrence <- function(cleaned_data, ref_ids) {
       ),
       reproductiveCondition = dplyr::recode_values(
         .data$custom.status.full.grown.bird,
-        "breeding bird" ~ "reproductive",
+        "breeding bird" ~ "breeding",
       ),
       vitality = ifelse(.data$dead, "dead", "alive"),
       occurrenceStatus = "present",
@@ -34,9 +34,9 @@ create_resighting_occurrence <- function(cleaned_data, ref_ids) {
         sep = "_"
       ),
       eventType = dplyr::case_when(
-        .data$observation_type == "dead" ~ "observation",
+        .data$observation_type == "dead" ~ "resighting",
         TRUE ~ .data$observation_type,
-        .default = "observation"
+        .default = "resighting"
       ),
       eventType = ifelse(
         !is.na(.data$observation_type),
@@ -44,7 +44,7 @@ create_resighting_occurrence <- function(cleaned_data, ref_ids) {
         "observation"
       ),
       eventDate = .data$observation_datetime,
-      samplingProtocol = "bird-ring",
+      samplingProtocol = .data$eventType,
       eventRemarks = paste(
         "observation conditions:", .data$observation_condition
       ),

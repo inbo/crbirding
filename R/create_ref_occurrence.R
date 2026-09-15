@@ -34,7 +34,7 @@ create_ref_occurrence <- function(cleaned_data) {
       bird_age_ringing = .data$bird_age_ringing, # Keep original value for emof
       reproductiveCondition = dplyr::recode_values(
         .data$custom.status.full.grown.bird,
-        "breeding bird" ~ "reproductive",
+        "breeding bird" ~ "breeding",
       ),
       vitality = ifelse(.data$dead, "dead", "alive"),
       occurrenceStatus = "present",
@@ -51,8 +51,7 @@ create_ref_occurrence <- function(cleaned_data) {
       eventDate = .data$observation_datetime,
       samplingProtocol = "ringing",
       eventRemarks = paste(
-        "observation conditions:", .data$observation_condition, "| ",
-        "bird age:", .data$bird_age_ringing
+        "observation conditions:", .data$observation_condition
       ),
       decimalLatitude = .data$observation_lat,
       decimalLongitude = .data$observation_lon,
