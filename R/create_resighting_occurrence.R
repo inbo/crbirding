@@ -33,10 +33,13 @@ create_resighting_occurrence <- function(cleaned_data, ref_ids) {
         .data$bird_id, .data$bird_shorthand_clean,
         sep = "_"
       ),
-      eventType = dplyr::case_when(
-        .data$observation_type == "dead" ~ "resighting",
-        TRUE ~ .data$observation_type,
-        .default = "resighting"
+      eventType = dplyr::recode_values(
+        .data$observation_type,
+        "capture" ~ "capture",
+        "release" ~ "release",
+        "capture+release" ~ "capture+release",
+        "dead" ~ "resighting",
+        default = "resighting"
       ),
       eventType = ifelse(
         !is.na(.data$observation_type),
