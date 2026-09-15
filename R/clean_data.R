@@ -47,11 +47,8 @@ clean_data <- function(data) {
         stringr::fixed(".")
       )
     ) |>
-    # Exclude unwanted data
-    dplyr::filter(
-      !is.na(.data$bird_id) &
-        !.data$observation_status %in% c("impossible", "unlikely")
-    ) |>
+    # Exclude records without bird_id
+    dplyr::filter(!is.na(.data$bird_id)) |>
     # Sort by bird_id, datetime and capture (important for mutate(.by) later)
     dplyr::arrange(
       .data$bird_id,
