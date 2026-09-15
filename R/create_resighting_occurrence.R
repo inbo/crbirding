@@ -41,11 +41,6 @@ create_resighting_occurrence <- function(cleaned_data, ref_ids) {
         "dead" ~ "resighting",
         default = "resighting"
       ),
-      eventType = ifelse(
-        !is.na(.data$observation_type),
-        .data$observation_type,
-        "observation"
-      ),
       eventDate = .data$observation_datetime,
       samplingProtocol = .data$eventType,
       eventRemarks = paste(
