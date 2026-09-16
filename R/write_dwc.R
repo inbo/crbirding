@@ -80,7 +80,7 @@ write_dwc <- function(data, directory, dataset_id = NULL, dataset_name = NULL,
   # Bind the occurrence df from the helper functions
   occurrence <-
     ref_occurrence |>
-    dplyr::select(-observation_id, -bird_age_ringing) |>
+    dplyr::select(-"observation_id", -"bird_age_ringing") |>
     dplyr::bind_rows(resighting_occurrence) |>
     dplyr::mutate(
       # DATASET-LEVEL
