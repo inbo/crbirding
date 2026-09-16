@@ -71,7 +71,7 @@ write_dwc <- function(data, directory, dataset_id = NULL, dataset_name = NULL,
     # Exclude impossible and unlikely records
     dplyr::filter(!.data$observation_status %in% c("impossible", "unlikely"))
   ref_occurrence <- create_ref_occurrence(cleaned_data)
-  ref_ids <- dplyr::pull(ref_occurrence, observation_id)
+  ref_ids <- dplyr::pull(ref_occurrence, "observation_id")
   resighting_occurrence <- create_resighting_occurrence(cleaned_data, ref_ids)
 
   # Create extended measurements or facts

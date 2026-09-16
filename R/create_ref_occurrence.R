@@ -12,7 +12,7 @@ create_ref_occurrence <- function(cleaned_data) {
     dplyr::filter(
       .data$observation_type %in% c("capture", "capture+release")
     ) |>
-    dplyr::slice_head(n = 1, by = bird_id) |>
+    dplyr::slice_head(n = 1, by = "bird_id") |>
     dplyr::mutate(
       .keep = "none",
       basisOfRecord = "HumanObservation",
