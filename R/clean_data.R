@@ -81,7 +81,23 @@ clean_data <- function(data) {
         ~ "dead"
       ),
       .by = "bird_id"
-    ) |>
+    )
+
+  # Get Aphia lsids for each scientific name
+  scientific_names <- cleaned_data |>
+    dplyr::pull(.data$bird_scientific_name) |>
+    unique()
+  aphia_ids <- movepub::get_aphia_id(scientific_names) |>
+    dplyr::select("name", "aphia_lsid") |>
+    dplyr::rename(
+      bird_scientific_name = "name",
+      bird_aphia_lsid = "aphia_lsid"
+      )
+
+  cleaned_data <-
+    cleaned_data |>
+    # Add Aphia lsid
+    dplyr::left_join(aphia_ids, by = c("bird_scientific_name")) |>
     # Select and order columns
     dplyr::select(
       "bird_id",
@@ -89,6 +105,7 @@ clean_data <- function(data) {
       "bird_shorthand_clean",
       "bird_reference",
       "bird_scientific_name",
+      "bird_aphia_lsid",
       "bird_sex",
       "bird_age_ringing",
       "bird_species_euring",

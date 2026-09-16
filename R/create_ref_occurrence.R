@@ -57,7 +57,7 @@ create_ref_occurrence <- function(cleaned_data) {
       decimalLongitude = .data$observation_lon,
       geodeticDatum = "WGS84",
       identificationVerificationStatus = "verified by expert",
-      scientificNameID = .data$bird_species_euring,
+      scientificNameID = .data$bird_aphia_lsid,
       scientificName = .data$bird_scientific_name,
       kingdom = "Animalia",
       observation_id = .data$observation_id

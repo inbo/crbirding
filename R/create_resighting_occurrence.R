@@ -55,7 +55,7 @@ create_resighting_occurrence <- function(cleaned_data, ref_ids) {
           "verified by expert",
           NA_character_
         ),
-      scientificNameID = .data$bird_species_euring,
+      scientificNameID = .data$bird_aphia_lsid,
       scientificName = .data$bird_scientific_name,
       kingdom = "Animalia"
     )
