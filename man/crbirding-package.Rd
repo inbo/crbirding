@@ -4,16 +4,23 @@
 \name{crbirding-package}
 \alias{crbirding}
 \alias{crbirding-package}
-\title{crbirding: What the Package Does (One Line, Title Case)}
+\title{crbirding: Prepare CR-Birding Data For Publication}
 \description{
-What the package does (one paragraph).
+Prepare colour-ring data from 'CR-Briding' (\url{https://cr-birding.org/}) for publication in a research repository. With 'crbirding' you can transform CR-Birding data to Darwin Core for publication to the Global Biodiversity Information Facility ('GBIF') and the Ocean Biodiversity Information System ('OBIS').
 }
 \author{
-\strong{Maintainer}: First Last \email{first.last@example.com}
+\strong{Maintainer}: Sanne Govaert \email{sanne.govaert@inbo.be} (\href{https://orcid.org/0000-0002-8939-1305}{ORCID}) (affiliation: Research Institute for Nature and Forest (INBO))
 
 Authors:
 \itemize{
-  \item First Last \email{first.last@example.com}
+  \item Sanne Govaert \email{sanne.govaert@inbo.be} (\href{https://orcid.org/0000-0002-8939-1305}{ORCID}) (affiliation: Research Institute for Nature and Forest (INBO))
+  \item Peter Desmet \email{peter.desmet@inbo.be} (\href{https://orcid.org/0000-0002-8442-8025}{ORCID}) (affiliation: Research Institute for Nature and Forest (INBO))
+}
+
+Other contributors:
+\itemize{
+  \item Research Institute for Nature and Forest (INBO) (\href{https://ror.org/00j54wy13}{ROR}) [copyright holder]
+  \item Netherlands Biodiversity Information Facility (https://www.nlbif.nl/) [funder]
 }
 
 }
