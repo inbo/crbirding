@@ -1,13 +1,43 @@
 Package: crbirding
-Title: What the Package Does (One Line, Title Case)
+Title: Prepare CR-Birding Data For Publication
 Version: 0.0.0.9000
-Authors@R: 
-    person("First", "Last", , "first.last@example.com", role = c("aut", "cre"))
-Description: What the package does (one paragraph).
+Authors@R: c(
+    person("Sanne", "Govaert", , "sanne.govaert@inbo.be", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0002-8939-1305", affiliation = "Research Institute for Nature and Forest (INBO)")),
+    person("Peter", "Desmet", , "peter.desmet@inbo.be", role = "aut",
+           comment = c(ORCID = "0000-0002-8442-8025", affiliation = "Research Institute for Nature and Forest (INBO)")),
+    person("Research Institute for Nature and Forest (INBO)", role = "cph",
+           comment = c(ROR = "00j54wy13")),
+    person("Netherlands Biodiversity Information Facility", role = "fnd",
+           comment = "https://www.nlbif.nl/")
+  )
+Description: Prepare colour-ring data from 'CR-Briding'
+    (<https://cr-birding.org/>) for publication in a research repository. With
+    'crbirding' you can transform CR-Birding data to Darwin Core for publication
+    to the Global Biodiversity Information Facility ('GBIF') and the Ocean
+    Biodiversity Information System ('OBIS').
 License: MIT + file LICENSE
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
 Depends: 
-    R (>= 3.5)
+    R (>= 4.1.0)
 LazyData: true
 Config/roxygen2/version: 8.1.0
+Imports: 
+    cli,
+    dplyr,
+    lubridate,
+    movepub,
+    readr,
+    rlang,
+    stringr
+Suggests: 
+    curl,
+    purrr,
+    testthat (>= 3.0.0),
+    xml2
+Config/testthat/edition: 3
+Remotes: 
+    inbo/movepub
+URL: https://github.com/inbo/crbirding
+BugReports: https://github.com/inbo/crbirding/issues
