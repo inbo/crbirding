@@ -3,23 +3,34 @@
 \docType{data}
 \name{pied_avocet}
 \alias{pied_avocet}
-\title{Example CR-birding dataset}
+\title{Sample CR-Birding dataset}
 \format{
-An object of class \code{data.frame} with 340 rows and 31 columns.
+An object of class \code{spec_tbl_df} (inherits from \code{tbl_df}, \code{tbl}, \code{data.frame}) with 340 rows and 31 columns.
+}
+\source{
+\url{https://submit.cr-birding.org/projects/37/}
 }
 \usage{
 pied_avocet
 }
 \description{
-Contains the
-\href{https://submit.cr-birding.org/projects/37/}{CR-birding Pied Avocet data}
-downloaded on 08/09/2026.
+A sample CR-Birding dataset, formatted as exported from the website (in
+English).
+}
+\details{
+This sample is derived from the study \href{https://submit.cr-birding.org/projects/37/}{Pied Avocet, white ring with 4 letters (first=E)}, containing
+observations of Pied avocet (\emph{Recurvirostra avosetta}) ringed in Antwerp,
+Belgium.
 }
 \examples{
 \dontrun{
 # The data in pied_avocet was created with the code below
-pied_avocet <-
- read.csv(system.file("extdata", "crbirding_export_project_37.csv", package = "crbirding"))
+pied_avocet <- readr::read_csv(
+  system.file(
+    "extdata/crbirding_export_project_37_en.csv",
+    package = "crbirding"
+  )
+)
 usethis::use_data(pied_avocet, overwrite = TRUE)
 }
 }
