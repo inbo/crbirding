@@ -8,6 +8,14 @@
 \description{
 Prepare colour-ring data from 'CR-Briding' (\url{https://cr-birding.org/}) for publication in a research repository. With 'crbirding' you can transform CR-Birding data to Darwin Core for publication to the Global Biodiversity Information Facility ('GBIF') and the Ocean Biodiversity Information System ('OBIS').
 }
+\seealso{
+Useful links:
+\itemize{
+  \item \url{https://github.com/inbo/crbirding}
+  \item Report bugs at \url{https://github.com/inbo/crbirding/issues}
+}
+
+}
 \author{
 \strong{Maintainer}: Sanne Govaert \email{sanne.govaert@inbo.be} (\href{https://orcid.org/0000-0002-8939-1305}{ORCID}) (affiliation: Research Institute for Nature and Forest (INBO))
 
