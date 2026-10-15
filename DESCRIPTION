@@ -9,10 +9,10 @@ Authors@R: c(
     person("Research Institute for Nature and Forest (INBO)", role = "cph",
            comment = c(ROR = "00j54wy13")),
     person("Netherlands Biodiversity Information Facility", role = "fnd",
-           comment = "https://www.nlbif.nl/")
+           comment = "https://www.nlbif.nl/gulliver/")
   )
 Description: Prepare colour-ringing data from 'CR-Birding'
-    (<https://cr-birding.org/>) for publication in a research repository. With
+    (<https://submit.cr-birding.org/>) for publication in a research repository. With
     'crbirding' you can transform CR-Birding data to Darwin Core for publication
     to the Global Biodiversity Information Facility ('GBIF') and the Ocean
     Biodiversity Information System ('OBIS').
@@ -39,5 +39,5 @@ Suggests:
 Config/testthat/edition: 3
 Remotes: 
     inbo/movepub
-URL: https://github.com/inbo/crbirding
+URL: https://github.com/inbo/crbirding, https://inbo.github.io/crbirding/
 BugReports: https://github.com/inbo/crbirding/issues

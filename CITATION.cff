@@ -9,7 +9,7 @@ type: software
 license: MIT
 title: 'crbirding: Prepare CR-Birding Data For Publication'
 version: 0.0.0.9000
-abstract: Prepare colour-ringing data from 'CR-Birding' (<https://cr-birding.org/>)
+abstract: Prepare colour-ringing data from 'CR-Birding' (<https://submit.cr-birding.org/>)
   for publication in a research repository. With 'crbirding' you can transform CR-Birding
   data to Darwin Core for publication to the Global Biodiversity Information Facility
   ('GBIF') and the Ocean Biodiversity Information System ('OBIS').
@@ -25,7 +25,7 @@ authors:
   orcid: https://orcid.org/0000-0002-8442-8025
   affiliation: Research Institute for Nature and Forest (INBO)
 repository-code: https://github.com/inbo/crbirding
-url: https://github.com/inbo/crbirding
+url: https://inbo.github.io/crbirding/
 contact:
 - family-names: Govaert
   given-names: Sanne
