@@ -11,7 +11,7 @@ Authors@R: c(
     person("Netherlands Biodiversity Information Facility", role = "fnd",
            comment = "https://www.nlbif.nl/")
   )
-Description: Prepare colour-ring data from 'CR-Briding'
+Description: Prepare colour-ringing data from 'CR-Birding'
     (<https://cr-birding.org/>) for publication in a research repository. With
     'crbirding' you can transform CR-Birding data to Darwin Core for publication
     to the Global Biodiversity Information Facility ('GBIF') and the Ocean
