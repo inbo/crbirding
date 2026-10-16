@@ -17,7 +17,12 @@ create_resighting_occurrence <- function(data, ringing_ids) {
       basisOfRecord = "HumanObservation",
       # OCCURRENCE
       occurrenceID = as.character(.data$observation_id),
-      sex = NA_character_,
+      sex = dplyr::recode_values(
+        .data$bird_sex,
+        "F" ~ "female",
+        "M" ~ "male",
+        "U" ~ "unknown"
+      ),
       lifeStage = dplyr::recode_values(
         .data$`custom:status full-grown bird`,
         "not applicable (chick)" ~ "juvenile"
