@@ -10,14 +10,20 @@ clean_data <- function(data) {
     data |>
     # Convert types
     dplyr::mutate(
-      observation_lat = round(as.numeric(.data$observation_lat), digits = 6),
-      observation_lon = round(as.numeric(.data$observation_lon), digits = 6),
       observation_date = lubridate::ymd(.data$observation_date),
       observation_time = dplyr::if_else(
-        is.na(.data$observation_time), "00:00:00", .data$observation_time
+        !is.na(.data$observation_time),
+        as.character(.data$observation_time),
+        "00:00:00"
       ),
-      observation_is_capture =
-        dplyr::if_else(.data$observation_is_capture == "Y", TRUE, FALSE)
+      observation_lat = round(as.numeric(.data$observation_lat), digits = 6),
+      observation_lon = round(as.numeric(.data$observation_lon), digits = 6),
+      observation_is_capture = dplyr::if_else(
+        observation_is_capture == "Y", TRUE, FALSE
+      ),
+      observation_is_certain = dplyr::if_else(
+        observation_is_certain == "Y", TRUE, FALSE
+      )
     ) |>
     # Add columns
     dplyr::mutate(
