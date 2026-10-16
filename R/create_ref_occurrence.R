@@ -15,7 +15,9 @@ create_ref_occurrence <- function(data) {
     dplyr::slice_head(n = 1, by = "bird_id") |>
     dplyr::mutate(
       .keep = "none",
+      # RECORD-LEVEL
       basisOfRecord = "HumanObservation",
+      # OCCURRENCE
       occurrenceID = paste(
         .data$bird_id, .data$bird_shorthand_clean, "start",
         sep = "_" # Same as eventID
@@ -37,7 +39,9 @@ create_ref_occurrence <- function(data) {
       ),
       vitality = dplyr::if_else(.data$dead, "dead", "alive"),
       occurrenceStatus = "present",
+      # ORGANISM
       organismID = .data$bird_id,
+      # EVENT
       eventID = paste(
         .data$bird_id, .data$bird_shorthand_clean, "start",
         sep = "_" # Same as occurrenceID
@@ -52,10 +56,13 @@ create_ref_occurrence <- function(data) {
       eventRemarks = paste(
         "observation conditions:", .data$observation_condition
       ),
+      # LOCATION
       decimalLatitude = .data$observation_lat,
       decimalLongitude = .data$observation_lon,
       geodeticDatum = "WGS84",
+      # IDENTIFICATION
       identificationVerificationStatus = "verified by expert",
+      # TAXON
       scientificNameID = .data$bird_aphia_lsid,
       scientificName = .data$bird_scientific_name,
       kingdom = "Animalia",

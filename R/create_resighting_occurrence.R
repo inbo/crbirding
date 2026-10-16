@@ -13,7 +13,9 @@ create_resighting_occurrence <- function(data, ref_ids) {
     dplyr::filter(!.data$observation_id %in% ref_ids) |>
     dplyr::mutate(
       .keep = "none",
+      # RECORD-LEVEL
       basisOfRecord = "HumanObservation",
+      # OCCURRENCE
       occurrenceID = as.character(.data$observation_id),
       sex = NA_character_,
       lifeStage = dplyr::recode_values(
@@ -26,7 +28,9 @@ create_resighting_occurrence <- function(data, ref_ids) {
       ),
       vitality = dplyr::if_else(.data$dead, "dead", "alive"),
       occurrenceStatus = "present",
+      # ORGANISM
       organismID = .data$bird_id,
+      # EVENT
       eventID = as.character(.data$observation_id),
       parentEventID = paste(
         .data$bird_id, .data$bird_shorthand_clean,
@@ -45,14 +49,17 @@ create_resighting_occurrence <- function(data, ref_ids) {
       eventRemarks = paste(
         "observation conditions:", .data$observation_condition
       ),
+      # LOCATION
       decimalLatitude = .data$observation_lat,
       decimalLongitude = .data$observation_lon,
       geodeticDatum = "WGS84",
+      # IDENTIFICATION
       identificationVerificationStatus = dplyr::if_else(
         .data$observation_status == "trusted",
         "verified by expert",
         NA_character_
       ),
+      # TAXON
       scientificNameID = .data$bird_aphia_lsid,
       scientificName = .data$bird_scientific_name,
       kingdom = "Animalia"
