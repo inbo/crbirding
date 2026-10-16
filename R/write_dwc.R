@@ -74,7 +74,10 @@ write_dwc <- function(data, directory, dataset_id = NULL, dataset_name = NULL,
   rights_holder <- rights_holder %||% NA_character_
 
   # Clean and filter data
-  data <- clean_data(data) |>
+  data <-
+    clean_data(data) |>
+    # Exclude records without bird_id
+    dplyr::filter(!is.na(.data$bird_id)) |>
     # Exclude impossible and unlikely records
     dplyr::filter(!.data$observation_status %in% c("impossible", "unlikely"))
   ref_occurrence <- create_ref_occurrence(data)

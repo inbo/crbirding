@@ -2,7 +2,6 @@
 #'
 #' @param data A data frame with observation data downloaded from [CR-Birding](
 #'   https://submit.cr-birding.org/).
-#'   Records without a `bird_id` are removed.
 #' @returns The data frame with converted, added and reordered columns.
 #' @noRd
 clean_data <- function(data) {
@@ -53,8 +52,6 @@ clean_data <- function(data) {
         stringr::fixed(".")
       )
     ) |>
-    # Exclude records without bird_id
-    dplyr::filter(!is.na(.data$bird_id)) |>
     # Sort by bird_id, datetime and capture (important for mutate (.by) later)
     dplyr::arrange(
       .data$bird_id,
