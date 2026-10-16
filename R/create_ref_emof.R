@@ -65,7 +65,7 @@ create_ref_emof <- function(ref_occurrence) {
   if (all(is.na(ref_occurrence$sex))) {
     emof <- dplyr::filter(emof, .data$measurementType != "sex")
   }
-  if (all(is.na(ref_occurrence$bird_age))) {
+  if (all(is.na(ref_occurrence$bird_age_ringing))) {
     emof <- dplyr::filter(emof, .data$measurementType != "bird age")
   }
 
