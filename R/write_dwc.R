@@ -87,7 +87,7 @@ write_dwc <- function(data, directory, dataset_id = NULL, dataset_name = NULL,
   # Create extended measurements or facts
   emof <- create_ref_emof(ref_occurrence)
 
-  # Bind the occurrence df from the helper functions
+  # Bind occurrence data returned by helper functions
   occurrence <-
     ref_occurrence |>
     dplyr::select(-"observation_id", -"bird_age_ringing") |>
@@ -134,4 +134,3 @@ write_dwc <- function(data, directory, dataset_id = NULL, dataset_name = NULL,
   # Return Darwin Core data invisibly
   invisible(return)
 }
-

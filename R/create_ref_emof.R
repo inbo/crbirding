@@ -38,7 +38,8 @@ create_ref_emof <- function(ref_occurrence) {
       .keep = "none",
       occurrenceID = .data$occurrenceID,
       measurementType = "bird age",
-      measurementTypeID = NA_character_, # chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/https://euring.org/files/documents/data_and_codes/code-manuel_new-euring_1979.pdf
+      # https://euring.org/files/documents/data_and_codes/code-manuel_new-euring_1979.pdf
+      measurementTypeID = NA_character_,
       measurementValue = dplyr::recode_values(
         .data$bird_age_ringing,
         "pullus" ~ "pullus",

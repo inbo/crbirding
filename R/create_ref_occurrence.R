@@ -2,7 +2,7 @@
 #'
 #' @param cleaned_data A data frame, as returned by `clean_data()`.
 #' @returns A data frame with Darwin Core occurrences derived from ringing
-#' events.
+#'   events.
 #' @family dwc functions
 #' @noRd
 create_ref_occurrence <- function(cleaned_data) {
