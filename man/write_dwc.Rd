@@ -60,8 +60,8 @@ Bird age is conservatively mapped to \code{lifeStage}, with pullus being mapped
 to juvenile.
 Other values are not mapped, as life stage is species-dependent.
 Sex and bird age are additionally provided in an Extended Measurement Or
-Facts extension, where  the original values of \code{bird_age_ringing} are
-retained.
+Facts extension, where values are mapped to a controlled vocabulary
+recommended by \href{https://obis.org/}{OBIS}.
 \item Observations without \code{bird_id} or with \code{observation_status = "impossible"}
 or \code{"unlikely"} are excluded.
 \item Parameters are used to set the following record-level terms:

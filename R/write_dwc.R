@@ -39,8 +39,8 @@
 #'   to juvenile.
 #'   Other values are not mapped, as life stage is species-dependent.
 #'   Sex and bird age are additionally provided in an Extended Measurement Or
-#'   Facts extension, where  the original values of `bird_age_ringing` are
-#'   retained.
+#'   Facts extension, where values are mapped to a controlled vocabulary
+#'   recommended by [OBIS](https://obis.org/).
 #' - Observations without `bird_id` or with `observation_status = "impossible"`
 #'   or `"unlikely"` are excluded.
 #' - Parameters are used to set the following record-level terms:
