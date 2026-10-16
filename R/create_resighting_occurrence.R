@@ -25,7 +25,7 @@ create_resighting_occurrence <- function(cleaned_data, ref_ids) {
         .data$custom.status.full.grown.bird,
         "breeding bird" ~ "breeding",
       ),
-      vitality = ifelse(.data$dead, "dead", "alive"),
+      vitality = dplyr::if_else(.data$dead, "dead", "alive"),
       occurrenceStatus = "present",
       organismID = .data$bird_id,
       eventID = as.character(.data$observation_id),
@@ -49,12 +49,11 @@ create_resighting_occurrence <- function(cleaned_data, ref_ids) {
       decimalLatitude = .data$observation_lat,
       decimalLongitude = .data$observation_lon,
       geodeticDatum = "WGS84",
-      identificationVerificationStatus =
-        ifelse(
-          .data$observation_status == "trusted",
-          "verified by expert",
-          NA_character_
-        ),
+      identificationVerificationStatus = dplyr::if_else(
+        .data$observation_status == "trusted",
+        "verified by expert",
+        NA_character_
+      ),
       scientificNameID = .data$bird_aphia_lsid,
       scientificName = .data$bird_scientific_name,
       kingdom = "Animalia"
