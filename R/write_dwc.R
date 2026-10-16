@@ -80,6 +80,9 @@ write_dwc <- function(data, directory, dataset_id = NULL, dataset_name = NULL,
     dplyr::filter(!is.na(.data$bird_id)) |>
     # Exclude impossible and unlikely records
     dplyr::filter(!.data$observation_status %in% c("impossible", "unlikely"))
+
+  # Start transformation
+  cli::cli_h2("Transforming data to Darwin Core")
   ref_occurrence <- create_ref_occurrence(data)
   ref_ids <- dplyr::pull(ref_occurrence, "observation_id")
   resighting_occurrence <- create_resighting_occurrence(data, ref_ids)
