@@ -2,11 +2,11 @@
 #'
 #' @param data A data frame with observation data downloaded from [CR-Birding](
 #'   https://submit.cr-birding.org/).
-#' @returns A data frame with converted types and added columns.
 #'   Records without a `bird_id` are removed.
+#' @returns The data frame with converted, added and reordered columns.
 #' @noRd
 clean_data <- function(data) {
-  cleaned_data <-
+  data <-
     data |>
     # Convert types
     dplyr::mutate(
@@ -55,7 +55,7 @@ clean_data <- function(data) {
     ) |>
     # Exclude records without bird_id
     dplyr::filter(!is.na(.data$bird_id)) |>
-    # Sort by bird_id, datetime and capture (important for mutate(.by) later)
+    # Sort by bird_id, datetime and capture (important for mutate (.by) later)
     dplyr::arrange(
       .data$bird_id,
       .data$observation_datetime,
@@ -78,9 +78,9 @@ clean_data <- function(data) {
         # Single capture (and therefore release)
         .data$observation_is_capture &
           (!dplyr::lead(.data$revalidation_release) |
-            is.na(dplyr::lead(.data$revalidation_release))) &
+           is.na(dplyr::lead(.data$revalidation_release))) &
           (!dplyr::lag(.data$observation_is_capture) |
-            is.na(dplyr::lag(.data$observation_is_capture)))
+           is.na(dplyr::lag(.data$observation_is_capture)))
         ~ "capture+release",
         # Dead
         dead & (!dplyr::lag(.data$dead) | is.na(dplyr::lag(.data$dead)))
@@ -90,22 +90,19 @@ clean_data <- function(data) {
     )
 
   # Get Aphia lsids for each scientific name
-  scientific_names <- cleaned_data |>
-    dplyr::pull(.data$bird_scientific_name) |>
-    unique()
-  aphia_ids <- movepub::get_aphia_id(scientific_names) |>
+  names <- dplyr::pull(dplyr::distinct(data, bird_scientific_name))
+  aphia_ids <-
+    movepub::get_aphia_id(names) |>
     dplyr::select("name", "aphia_lsid") |>
     dplyr::rename(
       bird_scientific_name = "name",
       bird_aphia_lsid = "aphia_lsid"
-      )
+    )
 
-  cleaned_data <-
-    cleaned_data |>
-    # Add Aphia lsid
+  # Join observations with aphia_id and reorder columns
+  data |>
     dplyr::left_join(aphia_ids, by = c("bird_scientific_name")) |>
-    # Select and order columns
-    dplyr::select(
+    dplyr::relocate(
       "bird_id",
       "bird_shorthand",
       "bird_shorthand_clean",
@@ -126,7 +123,6 @@ clean_data <- function(data) {
       "observation_lon",
       "observation_region_euring",
       "observation_condition",
-      "custom.status.full.grown.bird",
       "inserted",
       "observation_status",
       "observation_status_reason"
