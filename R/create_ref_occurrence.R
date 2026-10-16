@@ -32,7 +32,7 @@ create_ref_occurrence <- function(data) {
         "unknown" ~ "unknown"
       ),
       reproductiveCondition = dplyr::recode_values(
-        .data$custom.status.full.grown.bird,
+        .data$`custom:status full-grown bird`,
         "breeding bird" ~ "breeding",
       ),
       vitality = dplyr::if_else(.data$dead, "dead", "alive"),

@@ -17,11 +17,11 @@ create_resighting_occurrence <- function(data, ref_ids) {
       occurrenceID = as.character(.data$observation_id),
       sex = NA_character_,
       lifeStage = dplyr::recode_values(
-        .data$custom.status.full.grown.bird,
+        .data$`custom:status full-grown bird`,
         "not applicable (chick)" ~ "juvenile"
       ),
       reproductiveCondition = dplyr::recode_values(
-        .data$custom.status.full.grown.bird,
+        .data$`custom:status full-grown bird`,
         "breeding bird" ~ "breeding",
       ),
       vitality = dplyr::if_else(.data$dead, "dead", "alive"),
