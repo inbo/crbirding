@@ -5,7 +5,7 @@
 #'   events.
 #' @family dwc functions
 #' @noRd
-create_ref_occurrence <- function(data) {
+create_ringing_occurrence <- function(data) {
   data |>
     # Ringing event is the first observation that is either a capture or a
     # capture+release
