@@ -1,12 +1,12 @@
-#' Create Darwin Core Occurrence from reference (ringing) data
+#' Create Darwin Core Occurrence from ringing event data
 #'
-#' @param cleaned_data A data frame, as returned by `clean_data()`.
+#' @param data A data frame, as returned by `clean_data()`.
 #' @returns A data frame with Darwin Core occurrences derived from ringing
 #'   events.
 #' @family dwc functions
 #' @noRd
-create_ref_occurrence <- function(cleaned_data) {
-  cleaned_data |>
+create_ref_occurrence <- function(data) {
+  data |>
     # Ringing event is the first observation that is either a capture or a
     # capture+release
     dplyr::filter(
@@ -31,7 +31,6 @@ create_ref_occurrence <- function(cleaned_data) {
         "pullus" ~ "juvenile",
         "unknown" ~ "unknown"
       ),
-      bird_age_ringing = .data$bird_age_ringing, # Keep original value for emof
       reproductiveCondition = dplyr::recode_values(
         .data$custom.status.full.grown.bird,
         "breeding bird" ~ "breeding",
@@ -60,6 +59,8 @@ create_ref_occurrence <- function(cleaned_data) {
       scientificNameID = .data$bird_aphia_lsid,
       scientificName = .data$bird_scientific_name,
       kingdom = "Animalia",
-      observation_id = .data$observation_id
+      # Columns needed for resightings and emof
+      observation_id = .data$observation_id,
+      bird_age_ringing = .data$bird_age_ringing
     )
 }

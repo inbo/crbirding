@@ -1,14 +1,14 @@
 #' Create Darwin Core Occurrence from resighting data
 #'
-#' @param cleaned_data A data frame, as returned by `clean_data()`.
+#' @param data A data frame, as returned by `clean_data()`.
 #' @param ref_ids A vector of observation IDs that are already included in the
 #'   reference occurrence data frame, as returned by `create_ref_occurrence()`.
 #' @returns A data frame with Darwin Core occurrences derived from resighting
 #'   events.
 #' @family dwc functions
 #' @noRd
-create_resighting_occurrence <- function(cleaned_data, ref_ids) {
-  cleaned_data |>
+create_resighting_occurrence <- function(data, ref_ids) {
+  data |>
     # Filter out ringing observations
     dplyr::filter(!.data$observation_id %in% ref_ids) |>
     dplyr::mutate(
