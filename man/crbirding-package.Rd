@@ -6,12 +6,13 @@
 \alias{crbirding-package}
 \title{crbirding: Prepare CR-Birding Data For Publication}
 \description{
-Prepare colour-ring data from 'CR-Briding' (\url{https://cr-birding.org/}) for publication in a research repository. With 'crbirding' you can transform CR-Birding data to Darwin Core for publication to the Global Biodiversity Information Facility ('GBIF') and the Ocean Biodiversity Information System ('OBIS').
+Prepare colour-ringing data from 'CR-Birding' (\url{https://submit.cr-birding.org/}) for publication in a research repository. With 'crbirding' you can transform CR-Birding data to Darwin Core for publication to the Global Biodiversity Information Facility ('GBIF') and the Ocean Biodiversity Information System ('OBIS').
 }
 \seealso{
 Useful links:
 \itemize{
   \item \url{https://github.com/inbo/crbirding}
+  \item \url{https://inbo.github.io/crbirding/}
   \item Report bugs at \url{https://github.com/inbo/crbirding/issues}
 }
 
@@ -28,7 +29,7 @@ Authors:
 Other contributors:
 \itemize{
   \item Research Institute for Nature and Forest (INBO) (\href{https://ror.org/00j54wy13}{ROR}) [copyright holder]
-  \item Netherlands Biodiversity Information Facility (https://www.nlbif.nl/) [funder]
+  \item Netherlands Biodiversity Information Facility (https://www.nlbif.nl/gulliver/) [funder]
 }
 
 }
