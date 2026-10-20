@@ -83,16 +83,16 @@ write_dwc <- function(data, directory, dataset_id = NULL, dataset_name = NULL,
 
   # Start transformation
   cli::cli_h2("Transforming data to Darwin Core")
-  ref_occurrence <- create_ref_occurrence(data)
-  ref_ids <- dplyr::pull(ref_occurrence, "observation_id")
-  resighting_occurrence <- create_resighting_occurrence(data, ref_ids)
+  ringing_occurrence <- create_ringing_occurrence(data)
+  ringing_ids <- dplyr::pull(ringing_occurrence, "observation_id")
+  resighting_occurrence <- create_resighting_occurrence(data, ringing_ids)
 
   # Create extended measurements or facts
-  emof <- create_ref_emof(ref_occurrence)
+  emof <- create_ringing_emof(ringing_occurrence)
 
   # Bind occurrence data returned by helper functions
   occurrence <-
-    ref_occurrence |>
+    ringing_occurrence |>
     dplyr::select(-"observation_id", -"bird_age_ringing") |>
     dplyr::bind_rows(resighting_occurrence) |>
     dplyr::mutate(

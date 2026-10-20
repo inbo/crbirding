@@ -1,18 +1,18 @@
 #' Create Extended Measurement Or Facts from Darwin Core Occurrence data
 #'
 #' Pulls the **sex** and **life stage** information from the Darwin Core
-#' Occurrence data created with `create_ref_occurrence()` and maps these values
-#' to a controlled vocabulary recommended by [OBIS](https://obis.org/).
+#' Occurrence data created with `create_ringing_occurrence()` and maps these
+#' values to a controlled vocabulary recommended by [OBIS](https://obis.org/).
 #'
-#' @param ref_occurrence Data frame with Darwin Core occurrences derived from
-#'   ringing events, as returned by `create_ref_occurrence()`.
+#' @param ringing_occurrence Data frame with Darwin Core occurrences derived
+#'   from ringing events, as returned by `create_ringing_occurrence()`.
 #' @returns Data frame with [Extended Measurement Or Facts](
 #'   https://rs.gbif.org/extension/obis/extended_measurement_or_fact_2023-08-28.xml).
 #' @family dwc functions
 #' @noRd
-create_ref_emof <- function(ref_occurrence) {
+create_ringing_emof <- function(ringing_occurrence) {
   sex <-
-    ref_occurrence |>
+    ringing_occurrence |>
     dplyr::mutate(
       .keep = "none",
       occurrenceID = .data$occurrenceID,
@@ -33,7 +33,7 @@ create_ref_emof <- function(ref_occurrence) {
     )
 
   bird_age <-
-    ref_occurrence |>
+    ringing_occurrence |>
     dplyr::mutate(
       .keep = "none",
       occurrenceID = .data$occurrenceID,
@@ -61,11 +61,11 @@ create_ref_emof <- function(ref_occurrence) {
     dplyr::bind_rows(sex, bird_age) |>
     dplyr::arrange(.data$occurrenceID)
 
-  # Remove the measurementType if all values of that type are NA in ref_occurrence
-  if (all(is.na(ref_occurrence$sex))) {
+  # Remove the measurementType if all values of that type are NA
+  if (all(is.na(ringing_occurrence$sex))) {
     emof <- dplyr::filter(emof, .data$measurementType != "sex")
   }
-  if (all(is.na(ref_occurrence$bird_age_ringing))) {
+  if (all(is.na(ringing_occurrence$bird_age_ringing))) {
     emof <- dplyr::filter(emof, .data$measurementType != "bird age")
   }
 
