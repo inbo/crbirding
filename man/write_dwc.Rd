@@ -8,7 +8,7 @@ write_dwc(
   data,
   directory,
   dataset_id = NULL,
-  dataset_name = NULL,
+  dataset_name = unique(data$animal_project),
   license = NULL,
   rights_holder = NULL
 )
@@ -21,7 +21,7 @@ Data are expected to be in English and from a single study.}
 
 \item{dataset_id}{Identifier for the dataset.}
 
-\item{dataset_name}{Title of the dataset.}
+\item{dataset_name}{Title of the dataset. Defaults to \code{animal_project}.}
 
 \item{license}{License of the dataset.}
 

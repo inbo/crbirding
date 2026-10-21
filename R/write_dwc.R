@@ -12,7 +12,7 @@
 #'   Data are expected to be in English and from a single study.
 #' @param directory Path to local directory to write files to.
 #' @param dataset_id Identifier for the dataset.
-#' @param dataset_name Title of the dataset.
+#' @param dataset_name Title of the dataset. Defaults to `animal_project`.
 #' @param license License of the dataset.
 #' @param rights_holder Acronym of the organization owning or managing the
 #'   rights over the data.
@@ -65,13 +65,25 @@
 #'
 #' # Clean up (don't do this if you want to keep your files)
 #' unlink("my_directory", recursive = TRUE)
-write_dwc <- function(data, directory, dataset_id = NULL, dataset_name = NULL,
+write_dwc <- function(data, directory, dataset_id = NULL,
+                      dataset_name = unique(data$animal_project),
                       license = NULL, rights_holder = NULL) {
   # Set properties to NA when missing
   dataset_id <- dataset_id %||% NA_character_
-  dataset_name <- dataset_name %||% NA_character_
   license <- license %||% NA_character_
   rights_holder <- rights_holder %||% NA_character_
+
+  # Check that dataset_name is a single value
+  if (length(dataset_name) != 1) {
+    cli::cli_abort(
+      c(
+        "i" = "{.var data} must be a single study with a single animal project
+        and a single {.var dataset_name}.",
+        "x" = "{.var dataset_name} has {length(dataset_name)} values."
+      ),
+      class = "crbirding_error_datasetname_invalid"
+    )
+  }
 
   # Clean and filter data
   data <-
