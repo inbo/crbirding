@@ -61,6 +61,7 @@ test_that("write_dwc() returns the expected Darwin Core terms as columns", {
       "decimalLatitude",
       "decimalLongitude",
       "geodeticDatum",
+      "coordinateUncertaintyInMeters",
       "identificationVerificationStatus",
       "scientificNameID",
       "scientificName",
