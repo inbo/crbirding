@@ -1,163 +1,163 @@
 occurrenceID,measurementType,measurementTypeID,measurementValue,measurementValueID,measurementUnit,measurementUnitID
 607783,sex,http://vocab.nerc.ac.uk/collection/P01/current/ENTSEX01/,unknown,http://vocab.nerc.ac.uk/collection/S10/current/S105/,,http://vocab.nerc.ac.uk/collection/P06/current/XXXX/
-607783,life stage,,pullus,,,http://vocab.nerc.ac.uk/collection/P06/current/XXXX/
+607783,life stage,https://vocab.nerc.ac.uk/collection/P01/current/LSTAGE01/,pullus,,,http://vocab.nerc.ac.uk/collection/P06/current/XXXX/
 607790,sex,http://vocab.nerc.ac.uk/collection/P01/current/ENTSEX01/,unknown,http://vocab.nerc.ac.uk/collection/S10/current/S105/,,http://vocab.nerc.ac.uk/collection/P06/current/XXXX/
-607790,life stage,,pullus,,,http://vocab.nerc.ac.uk/collection/P06/current/XXXX/
+607790,life stage,https://vocab.nerc.ac.uk/collection/P01/current/LSTAGE01/,pullus,,,http://vocab.nerc.ac.uk/collection/P06/current/XXXX/
 607792,sex,http://vocab.nerc.ac.uk/collection/P01/current/ENTSEX01/,unknown,http://vocab.nerc.ac.uk/collection/S10/current/S105/,,http://vocab.nerc.ac.uk/collection/P06/current/XXXX/
-607792,life stage,,pullus,,,http://vocab.nerc.ac.uk/collection/P06/current/XXXX/
+607792,life stage,https://vocab.nerc.ac.uk/collection/P01/current/LSTAGE01/,pullus,,,http://vocab.nerc.ac.uk/collection/P06/current/XXXX/
 607793,sex,http://vocab.nerc.ac.uk/collection/P01/current/ENTSEX01/,unknown,http://vocab.nerc.ac.uk/collection/S10/current/S105/,,http://vocab.nerc.ac.uk/collection/P06/current/XXXX/
-607793,life stage,,pullus,,,http://vocab.nerc.ac.uk/collection/P06/current/XXXX/
+607793,life stage,https://vocab.nerc.ac.uk/collection/P01/current/LSTAGE01/,pullus,,,http://vocab.nerc.ac.uk/collection/P06/current/XXXX/
 607795,sex,http://vocab.nerc.ac.uk/collection/P01/current/ENTSEX01/,unknown,http://vocab.nerc.ac.uk/collection/S10/current/S105/,,http://vocab.nerc.ac.uk/collection/P06/current/XXXX/
-607795,life stage,,pullus,,,http://vocab.nerc.ac.uk/collection/P06/current/XXXX/
+607795,life stage,https://vocab.nerc.ac.uk/collection/P01/current/LSTAGE01/,pullus,,,http://vocab.nerc.ac.uk/collection/P06/current/XXXX/
 607802,sex,http://vocab.nerc.ac.uk/collection/P01/current/ENTSEX01/,unknown,http://vocab.nerc.ac.uk/collection/S10/current/S105/,,http://vocab.nerc.ac.uk/collection/P06/current/XXXX/
-607802,life stage,,pullus,,,http://vocab.nerc.ac.uk/collection/P06/current/XXXX/
+607802,life stage,https://vocab.nerc.ac.uk/collection/P01/current/LSTAGE01/,pullus,,,http://vocab.nerc.ac.uk/collection/P06/current/XXXX/
 607810,sex,http://vocab.nerc.ac.uk/collection/P01/current/ENTSEX01/,unknown,http://vocab.nerc.ac.uk/collection/S10/current/S105/,,http://vocab.nerc.ac.uk/collection/P06/current/XXXX/
-607810,life stage,,pullus,,,http://vocab.nerc.ac.uk/collection/P06/current/XXXX/
+607810,life stage,https://vocab.nerc.ac.uk/collection/P01/current/LSTAGE01/,pullus,,,http://vocab.nerc.ac.uk/collection/P06/current/XXXX/
 607818,sex,http://vocab.nerc.ac.uk/collection/P01/current/ENTSEX01/,unknown,http://vocab.nerc.ac.uk/collection/S10/current/S105/,,http://vocab.nerc.ac.uk/collection/P06/current/XXXX/
-607818,life stage,,pullus,,,http://vocab.nerc.ac.uk/collection/P06/current/XXXX/
+607818,life stage,https://vocab.nerc.ac.uk/collection/P01/current/LSTAGE01/,pullus,,,http://vocab.nerc.ac.uk/collection/P06/current/XXXX/
 607823,sex,http://vocab.nerc.ac.uk/collection/P01/current/ENTSEX01/,female,http://vocab.nerc.ac.uk/collection/S10/current/S102/,,http://vocab.nerc.ac.uk/collection/P06/current/XXXX/
-607823,life stage,,>4th calendar year,,,http://vocab.nerc.ac.uk/collection/P06/current/XXXX/
+607823,life stage,https://vocab.nerc.ac.uk/collection/P01/current/LSTAGE01/,>4th calendar year,,,http://vocab.nerc.ac.uk/collection/P06/current/XXXX/
 607839,sex,http://vocab.nerc.ac.uk/collection/P01/current/ENTSEX01/,unknown,http://vocab.nerc.ac.uk/collection/S10/current/S105/,,http://vocab.nerc.ac.uk/collection/P06/current/XXXX/
-607839,life stage,,pullus,,,http://vocab.nerc.ac.uk/collection/P06/current/XXXX/
+607839,life stage,https://vocab.nerc.ac.uk/collection/P01/current/LSTAGE01/,pullus,,,http://vocab.nerc.ac.uk/collection/P06/current/XXXX/
 607841,sex,http://vocab.nerc.ac.uk/collection/P01/current/ENTSEX01/,unknown,http://vocab.nerc.ac.uk/collection/S10/current/S105/,,http://vocab.nerc.ac.uk/collection/P06/current/XXXX/
-607841,life stage,,pullus,,,http://vocab.nerc.ac.uk/collection/P06/current/XXXX/
+607841,life stage,https://vocab.nerc.ac.uk/collection/P01/current/LSTAGE01/,pullus,,,http://vocab.nerc.ac.uk/collection/P06/current/XXXX/
 607842,sex,http://vocab.nerc.ac.uk/collection/P01/current/ENTSEX01/,unknown,http://vocab.nerc.ac.uk/collection/S10/current/S105/,,http://vocab.nerc.ac.uk/collection/P06/current/XXXX/
-607842,life stage,,pullus,,,http://vocab.nerc.ac.uk/collection/P06/current/XXXX/
+607842,life stage,https://vocab.nerc.ac.uk/collection/P01/current/LSTAGE01/,pullus,,,http://vocab.nerc.ac.uk/collection/P06/current/XXXX/
 607843,sex,http://vocab.nerc.ac.uk/collection/P01/current/ENTSEX01/,unknown,http://vocab.nerc.ac.uk/collection/S10/current/S105/,,http://vocab.nerc.ac.uk/collection/P06/current/XXXX/
-607843,life stage,,pullus,,,http://vocab.nerc.ac.uk/collection/P06/current/XXXX/
+607843,life stage,https://vocab.nerc.ac.uk/collection/P01/current/LSTAGE01/,pullus,,,http://vocab.nerc.ac.uk/collection/P06/current/XXXX/
 607844,sex,http://vocab.nerc.ac.uk/collection/P01/current/ENTSEX01/,unknown,http://vocab.nerc.ac.uk/collection/S10/current/S105/,,http://vocab.nerc.ac.uk/collection/P06/current/XXXX/
-607844,life stage,,pullus,,,http://vocab.nerc.ac.uk/collection/P06/current/XXXX/
+607844,life stage,https://vocab.nerc.ac.uk/collection/P01/current/LSTAGE01/,pullus,,,http://vocab.nerc.ac.uk/collection/P06/current/XXXX/
 607847,sex,http://vocab.nerc.ac.uk/collection/P01/current/ENTSEX01/,unknown,http://vocab.nerc.ac.uk/collection/S10/current/S105/,,http://vocab.nerc.ac.uk/collection/P06/current/XXXX/
-607847,life stage,,pullus,,,http://vocab.nerc.ac.uk/collection/P06/current/XXXX/
+607847,life stage,https://vocab.nerc.ac.uk/collection/P01/current/LSTAGE01/,pullus,,,http://vocab.nerc.ac.uk/collection/P06/current/XXXX/
 607864,sex,http://vocab.nerc.ac.uk/collection/P01/current/ENTSEX01/,unknown,http://vocab.nerc.ac.uk/collection/S10/current/S105/,,http://vocab.nerc.ac.uk/collection/P06/current/XXXX/
-607864,life stage,,pullus,,,http://vocab.nerc.ac.uk/collection/P06/current/XXXX/
+607864,life stage,https://vocab.nerc.ac.uk/collection/P01/current/LSTAGE01/,pullus,,,http://vocab.nerc.ac.uk/collection/P06/current/XXXX/
 607870,sex,http://vocab.nerc.ac.uk/collection/P01/current/ENTSEX01/,unknown,http://vocab.nerc.ac.uk/collection/S10/current/S105/,,http://vocab.nerc.ac.uk/collection/P06/current/XXXX/
-607870,life stage,,pullus,,,http://vocab.nerc.ac.uk/collection/P06/current/XXXX/
+607870,life stage,https://vocab.nerc.ac.uk/collection/P01/current/LSTAGE01/,pullus,,,http://vocab.nerc.ac.uk/collection/P06/current/XXXX/
 607872,sex,http://vocab.nerc.ac.uk/collection/P01/current/ENTSEX01/,unknown,http://vocab.nerc.ac.uk/collection/S10/current/S105/,,http://vocab.nerc.ac.uk/collection/P06/current/XXXX/
-607872,life stage,,pullus,,,http://vocab.nerc.ac.uk/collection/P06/current/XXXX/
+607872,life stage,https://vocab.nerc.ac.uk/collection/P01/current/LSTAGE01/,pullus,,,http://vocab.nerc.ac.uk/collection/P06/current/XXXX/
 607877,sex,http://vocab.nerc.ac.uk/collection/P01/current/ENTSEX01/,unknown,http://vocab.nerc.ac.uk/collection/S10/current/S105/,,http://vocab.nerc.ac.uk/collection/P06/current/XXXX/
-607877,life stage,,pullus,,,http://vocab.nerc.ac.uk/collection/P06/current/XXXX/
+607877,life stage,https://vocab.nerc.ac.uk/collection/P01/current/LSTAGE01/,pullus,,,http://vocab.nerc.ac.uk/collection/P06/current/XXXX/
 607886,sex,http://vocab.nerc.ac.uk/collection/P01/current/ENTSEX01/,unknown,http://vocab.nerc.ac.uk/collection/S10/current/S105/,,http://vocab.nerc.ac.uk/collection/P06/current/XXXX/
-607886,life stage,,pullus,,,http://vocab.nerc.ac.uk/collection/P06/current/XXXX/
+607886,life stage,https://vocab.nerc.ac.uk/collection/P01/current/LSTAGE01/,pullus,,,http://vocab.nerc.ac.uk/collection/P06/current/XXXX/
 607891,sex,http://vocab.nerc.ac.uk/collection/P01/current/ENTSEX01/,unknown,http://vocab.nerc.ac.uk/collection/S10/current/S105/,,http://vocab.nerc.ac.uk/collection/P06/current/XXXX/
-607891,life stage,,pullus,,,http://vocab.nerc.ac.uk/collection/P06/current/XXXX/
+607891,life stage,https://vocab.nerc.ac.uk/collection/P01/current/LSTAGE01/,pullus,,,http://vocab.nerc.ac.uk/collection/P06/current/XXXX/
 607892,sex,http://vocab.nerc.ac.uk/collection/P01/current/ENTSEX01/,unknown,http://vocab.nerc.ac.uk/collection/S10/current/S105/,,http://vocab.nerc.ac.uk/collection/P06/current/XXXX/
-607892,life stage,,pullus,,,http://vocab.nerc.ac.uk/collection/P06/current/XXXX/
+607892,life stage,https://vocab.nerc.ac.uk/collection/P01/current/LSTAGE01/,pullus,,,http://vocab.nerc.ac.uk/collection/P06/current/XXXX/
 607893,sex,http://vocab.nerc.ac.uk/collection/P01/current/ENTSEX01/,unknown,http://vocab.nerc.ac.uk/collection/S10/current/S105/,,http://vocab.nerc.ac.uk/collection/P06/current/XXXX/
-607893,life stage,,pullus,,,http://vocab.nerc.ac.uk/collection/P06/current/XXXX/
+607893,life stage,https://vocab.nerc.ac.uk/collection/P01/current/LSTAGE01/,pullus,,,http://vocab.nerc.ac.uk/collection/P06/current/XXXX/
 607894,sex,http://vocab.nerc.ac.uk/collection/P01/current/ENTSEX01/,unknown,http://vocab.nerc.ac.uk/collection/S10/current/S105/,,http://vocab.nerc.ac.uk/collection/P06/current/XXXX/
-607894,life stage,,pullus,,,http://vocab.nerc.ac.uk/collection/P06/current/XXXX/
+607894,life stage,https://vocab.nerc.ac.uk/collection/P01/current/LSTAGE01/,pullus,,,http://vocab.nerc.ac.uk/collection/P06/current/XXXX/
 607897,sex,http://vocab.nerc.ac.uk/collection/P01/current/ENTSEX01/,unknown,http://vocab.nerc.ac.uk/collection/S10/current/S105/,,http://vocab.nerc.ac.uk/collection/P06/current/XXXX/
-607897,life stage,,pullus,,,http://vocab.nerc.ac.uk/collection/P06/current/XXXX/
+607897,life stage,https://vocab.nerc.ac.uk/collection/P01/current/LSTAGE01/,pullus,,,http://vocab.nerc.ac.uk/collection/P06/current/XXXX/
 607899,sex,http://vocab.nerc.ac.uk/collection/P01/current/ENTSEX01/,unknown,http://vocab.nerc.ac.uk/collection/S10/current/S105/,,http://vocab.nerc.ac.uk/collection/P06/current/XXXX/
-607899,life stage,,pullus,,,http://vocab.nerc.ac.uk/collection/P06/current/XXXX/
+607899,life stage,https://vocab.nerc.ac.uk/collection/P01/current/LSTAGE01/,pullus,,,http://vocab.nerc.ac.uk/collection/P06/current/XXXX/
 607901,sex,http://vocab.nerc.ac.uk/collection/P01/current/ENTSEX01/,unknown,http://vocab.nerc.ac.uk/collection/S10/current/S105/,,http://vocab.nerc.ac.uk/collection/P06/current/XXXX/
-607901,life stage,,pullus,,,http://vocab.nerc.ac.uk/collection/P06/current/XXXX/
+607901,life stage,https://vocab.nerc.ac.uk/collection/P01/current/LSTAGE01/,pullus,,,http://vocab.nerc.ac.uk/collection/P06/current/XXXX/
 607911,sex,http://vocab.nerc.ac.uk/collection/P01/current/ENTSEX01/,unknown,http://vocab.nerc.ac.uk/collection/S10/current/S105/,,http://vocab.nerc.ac.uk/collection/P06/current/XXXX/
-607911,life stage,,pullus,,,http://vocab.nerc.ac.uk/collection/P06/current/XXXX/
+607911,life stage,https://vocab.nerc.ac.uk/collection/P01/current/LSTAGE01/,pullus,,,http://vocab.nerc.ac.uk/collection/P06/current/XXXX/
 607912,sex,http://vocab.nerc.ac.uk/collection/P01/current/ENTSEX01/,unknown,http://vocab.nerc.ac.uk/collection/S10/current/S105/,,http://vocab.nerc.ac.uk/collection/P06/current/XXXX/
-607912,life stage,,pullus,,,http://vocab.nerc.ac.uk/collection/P06/current/XXXX/
+607912,life stage,https://vocab.nerc.ac.uk/collection/P01/current/LSTAGE01/,pullus,,,http://vocab.nerc.ac.uk/collection/P06/current/XXXX/
 607914,sex,http://vocab.nerc.ac.uk/collection/P01/current/ENTSEX01/,unknown,http://vocab.nerc.ac.uk/collection/S10/current/S105/,,http://vocab.nerc.ac.uk/collection/P06/current/XXXX/
-607914,life stage,,pullus,,,http://vocab.nerc.ac.uk/collection/P06/current/XXXX/
+607914,life stage,https://vocab.nerc.ac.uk/collection/P01/current/LSTAGE01/,pullus,,,http://vocab.nerc.ac.uk/collection/P06/current/XXXX/
 607917,sex,http://vocab.nerc.ac.uk/collection/P01/current/ENTSEX01/,unknown,http://vocab.nerc.ac.uk/collection/S10/current/S105/,,http://vocab.nerc.ac.uk/collection/P06/current/XXXX/
-607917,life stage,,pullus,,,http://vocab.nerc.ac.uk/collection/P06/current/XXXX/
+607917,life stage,https://vocab.nerc.ac.uk/collection/P01/current/LSTAGE01/,pullus,,,http://vocab.nerc.ac.uk/collection/P06/current/XXXX/
 607920,sex,http://vocab.nerc.ac.uk/collection/P01/current/ENTSEX01/,unknown,http://vocab.nerc.ac.uk/collection/S10/current/S105/,,http://vocab.nerc.ac.uk/collection/P06/current/XXXX/
-607920,life stage,,pullus,,,http://vocab.nerc.ac.uk/collection/P06/current/XXXX/
+607920,life stage,https://vocab.nerc.ac.uk/collection/P01/current/LSTAGE01/,pullus,,,http://vocab.nerc.ac.uk/collection/P06/current/XXXX/
 607921,sex,http://vocab.nerc.ac.uk/collection/P01/current/ENTSEX01/,unknown,http://vocab.nerc.ac.uk/collection/S10/current/S105/,,http://vocab.nerc.ac.uk/collection/P06/current/XXXX/
-607921,life stage,,pullus,,,http://vocab.nerc.ac.uk/collection/P06/current/XXXX/
+607921,life stage,https://vocab.nerc.ac.uk/collection/P01/current/LSTAGE01/,pullus,,,http://vocab.nerc.ac.uk/collection/P06/current/XXXX/
 607924,sex,http://vocab.nerc.ac.uk/collection/P01/current/ENTSEX01/,unknown,http://vocab.nerc.ac.uk/collection/S10/current/S105/,,http://vocab.nerc.ac.uk/collection/P06/current/XXXX/
-607924,life stage,,pullus,,,http://vocab.nerc.ac.uk/collection/P06/current/XXXX/
+607924,life stage,https://vocab.nerc.ac.uk/collection/P01/current/LSTAGE01/,pullus,,,http://vocab.nerc.ac.uk/collection/P06/current/XXXX/
 607928,sex,http://vocab.nerc.ac.uk/collection/P01/current/ENTSEX01/,unknown,http://vocab.nerc.ac.uk/collection/S10/current/S105/,,http://vocab.nerc.ac.uk/collection/P06/current/XXXX/
-607928,life stage,,pullus,,,http://vocab.nerc.ac.uk/collection/P06/current/XXXX/
+607928,life stage,https://vocab.nerc.ac.uk/collection/P01/current/LSTAGE01/,pullus,,,http://vocab.nerc.ac.uk/collection/P06/current/XXXX/
 607931,sex,http://vocab.nerc.ac.uk/collection/P01/current/ENTSEX01/,unknown,http://vocab.nerc.ac.uk/collection/S10/current/S105/,,http://vocab.nerc.ac.uk/collection/P06/current/XXXX/
-607931,life stage,,pullus,,,http://vocab.nerc.ac.uk/collection/P06/current/XXXX/
+607931,life stage,https://vocab.nerc.ac.uk/collection/P01/current/LSTAGE01/,pullus,,,http://vocab.nerc.ac.uk/collection/P06/current/XXXX/
 607932,sex,http://vocab.nerc.ac.uk/collection/P01/current/ENTSEX01/,unknown,http://vocab.nerc.ac.uk/collection/S10/current/S105/,,http://vocab.nerc.ac.uk/collection/P06/current/XXXX/
-607932,life stage,,pullus,,,http://vocab.nerc.ac.uk/collection/P06/current/XXXX/
+607932,life stage,https://vocab.nerc.ac.uk/collection/P01/current/LSTAGE01/,pullus,,,http://vocab.nerc.ac.uk/collection/P06/current/XXXX/
 607935,sex,http://vocab.nerc.ac.uk/collection/P01/current/ENTSEX01/,unknown,http://vocab.nerc.ac.uk/collection/S10/current/S105/,,http://vocab.nerc.ac.uk/collection/P06/current/XXXX/
-607935,life stage,,pullus,,,http://vocab.nerc.ac.uk/collection/P06/current/XXXX/
+607935,life stage,https://vocab.nerc.ac.uk/collection/P01/current/LSTAGE01/,pullus,,,http://vocab.nerc.ac.uk/collection/P06/current/XXXX/
 607957,sex,http://vocab.nerc.ac.uk/collection/P01/current/ENTSEX01/,unknown,http://vocab.nerc.ac.uk/collection/S10/current/S105/,,http://vocab.nerc.ac.uk/collection/P06/current/XXXX/
-607957,life stage,,pullus,,,http://vocab.nerc.ac.uk/collection/P06/current/XXXX/
+607957,life stage,https://vocab.nerc.ac.uk/collection/P01/current/LSTAGE01/,pullus,,,http://vocab.nerc.ac.uk/collection/P06/current/XXXX/
 607960,sex,http://vocab.nerc.ac.uk/collection/P01/current/ENTSEX01/,unknown,http://vocab.nerc.ac.uk/collection/S10/current/S105/,,http://vocab.nerc.ac.uk/collection/P06/current/XXXX/
-607960,life stage,,pullus,,,http://vocab.nerc.ac.uk/collection/P06/current/XXXX/
+607960,life stage,https://vocab.nerc.ac.uk/collection/P01/current/LSTAGE01/,pullus,,,http://vocab.nerc.ac.uk/collection/P06/current/XXXX/
 607961,sex,http://vocab.nerc.ac.uk/collection/P01/current/ENTSEX01/,unknown,http://vocab.nerc.ac.uk/collection/S10/current/S105/,,http://vocab.nerc.ac.uk/collection/P06/current/XXXX/
-607961,life stage,,pullus,,,http://vocab.nerc.ac.uk/collection/P06/current/XXXX/
+607961,life stage,https://vocab.nerc.ac.uk/collection/P01/current/LSTAGE01/,pullus,,,http://vocab.nerc.ac.uk/collection/P06/current/XXXX/
 607962,sex,http://vocab.nerc.ac.uk/collection/P01/current/ENTSEX01/,unknown,http://vocab.nerc.ac.uk/collection/S10/current/S105/,,http://vocab.nerc.ac.uk/collection/P06/current/XXXX/
-607962,life stage,,pullus,,,http://vocab.nerc.ac.uk/collection/P06/current/XXXX/
+607962,life stage,https://vocab.nerc.ac.uk/collection/P01/current/LSTAGE01/,pullus,,,http://vocab.nerc.ac.uk/collection/P06/current/XXXX/
 607963,sex,http://vocab.nerc.ac.uk/collection/P01/current/ENTSEX01/,unknown,http://vocab.nerc.ac.uk/collection/S10/current/S105/,,http://vocab.nerc.ac.uk/collection/P06/current/XXXX/
-607963,life stage,,pullus,,,http://vocab.nerc.ac.uk/collection/P06/current/XXXX/
+607963,life stage,https://vocab.nerc.ac.uk/collection/P01/current/LSTAGE01/,pullus,,,http://vocab.nerc.ac.uk/collection/P06/current/XXXX/
 607985,sex,http://vocab.nerc.ac.uk/collection/P01/current/ENTSEX01/,unknown,http://vocab.nerc.ac.uk/collection/S10/current/S105/,,http://vocab.nerc.ac.uk/collection/P06/current/XXXX/
-607985,life stage,,pullus,,,http://vocab.nerc.ac.uk/collection/P06/current/XXXX/
+607985,life stage,https://vocab.nerc.ac.uk/collection/P01/current/LSTAGE01/,pullus,,,http://vocab.nerc.ac.uk/collection/P06/current/XXXX/
 607987,sex,http://vocab.nerc.ac.uk/collection/P01/current/ENTSEX01/,unknown,http://vocab.nerc.ac.uk/collection/S10/current/S105/,,http://vocab.nerc.ac.uk/collection/P06/current/XXXX/
-607987,life stage,,pullus,,,http://vocab.nerc.ac.uk/collection/P06/current/XXXX/
+607987,life stage,https://vocab.nerc.ac.uk/collection/P01/current/LSTAGE01/,pullus,,,http://vocab.nerc.ac.uk/collection/P06/current/XXXX/
 607988,sex,http://vocab.nerc.ac.uk/collection/P01/current/ENTSEX01/,unknown,http://vocab.nerc.ac.uk/collection/S10/current/S105/,,http://vocab.nerc.ac.uk/collection/P06/current/XXXX/
-607988,life stage,,pullus,,,http://vocab.nerc.ac.uk/collection/P06/current/XXXX/
+607988,life stage,https://vocab.nerc.ac.uk/collection/P01/current/LSTAGE01/,pullus,,,http://vocab.nerc.ac.uk/collection/P06/current/XXXX/
 607989,sex,http://vocab.nerc.ac.uk/collection/P01/current/ENTSEX01/,unknown,http://vocab.nerc.ac.uk/collection/S10/current/S105/,,http://vocab.nerc.ac.uk/collection/P06/current/XXXX/
-607989,life stage,,pullus,,,http://vocab.nerc.ac.uk/collection/P06/current/XXXX/
+607989,life stage,https://vocab.nerc.ac.uk/collection/P01/current/LSTAGE01/,pullus,,,http://vocab.nerc.ac.uk/collection/P06/current/XXXX/
 607992,sex,http://vocab.nerc.ac.uk/collection/P01/current/ENTSEX01/,unknown,http://vocab.nerc.ac.uk/collection/S10/current/S105/,,http://vocab.nerc.ac.uk/collection/P06/current/XXXX/
-607992,life stage,,pullus,,,http://vocab.nerc.ac.uk/collection/P06/current/XXXX/
+607992,life stage,https://vocab.nerc.ac.uk/collection/P01/current/LSTAGE01/,pullus,,,http://vocab.nerc.ac.uk/collection/P06/current/XXXX/
 607993,sex,http://vocab.nerc.ac.uk/collection/P01/current/ENTSEX01/,unknown,http://vocab.nerc.ac.uk/collection/S10/current/S105/,,http://vocab.nerc.ac.uk/collection/P06/current/XXXX/
-607993,life stage,,pullus,,,http://vocab.nerc.ac.uk/collection/P06/current/XXXX/
+607993,life stage,https://vocab.nerc.ac.uk/collection/P01/current/LSTAGE01/,pullus,,,http://vocab.nerc.ac.uk/collection/P06/current/XXXX/
 607994,sex,http://vocab.nerc.ac.uk/collection/P01/current/ENTSEX01/,unknown,http://vocab.nerc.ac.uk/collection/S10/current/S105/,,http://vocab.nerc.ac.uk/collection/P06/current/XXXX/
-607994,life stage,,pullus,,,http://vocab.nerc.ac.uk/collection/P06/current/XXXX/
+607994,life stage,https://vocab.nerc.ac.uk/collection/P01/current/LSTAGE01/,pullus,,,http://vocab.nerc.ac.uk/collection/P06/current/XXXX/
 607999,sex,http://vocab.nerc.ac.uk/collection/P01/current/ENTSEX01/,unknown,http://vocab.nerc.ac.uk/collection/S10/current/S105/,,http://vocab.nerc.ac.uk/collection/P06/current/XXXX/
-607999,life stage,,pullus,,,http://vocab.nerc.ac.uk/collection/P06/current/XXXX/
+607999,life stage,https://vocab.nerc.ac.uk/collection/P01/current/LSTAGE01/,pullus,,,http://vocab.nerc.ac.uk/collection/P06/current/XXXX/
 608000,sex,http://vocab.nerc.ac.uk/collection/P01/current/ENTSEX01/,unknown,http://vocab.nerc.ac.uk/collection/S10/current/S105/,,http://vocab.nerc.ac.uk/collection/P06/current/XXXX/
-608000,life stage,,pullus,,,http://vocab.nerc.ac.uk/collection/P06/current/XXXX/
+608000,life stage,https://vocab.nerc.ac.uk/collection/P01/current/LSTAGE01/,pullus,,,http://vocab.nerc.ac.uk/collection/P06/current/XXXX/
 1098687,sex,http://vocab.nerc.ac.uk/collection/P01/current/ENTSEX01/,unknown,http://vocab.nerc.ac.uk/collection/S10/current/S105/,,http://vocab.nerc.ac.uk/collection/P06/current/XXXX/
-1098687,life stage,,pullus,,,http://vocab.nerc.ac.uk/collection/P06/current/XXXX/
+1098687,life stage,https://vocab.nerc.ac.uk/collection/P01/current/LSTAGE01/,pullus,,,http://vocab.nerc.ac.uk/collection/P06/current/XXXX/
 1098688,sex,http://vocab.nerc.ac.uk/collection/P01/current/ENTSEX01/,unknown,http://vocab.nerc.ac.uk/collection/S10/current/S105/,,http://vocab.nerc.ac.uk/collection/P06/current/XXXX/
-1098688,life stage,,pullus,,,http://vocab.nerc.ac.uk/collection/P06/current/XXXX/
+1098688,life stage,https://vocab.nerc.ac.uk/collection/P01/current/LSTAGE01/,pullus,,,http://vocab.nerc.ac.uk/collection/P06/current/XXXX/
 1099525,sex,http://vocab.nerc.ac.uk/collection/P01/current/ENTSEX01/,female,http://vocab.nerc.ac.uk/collection/S10/current/S102/,,http://vocab.nerc.ac.uk/collection/P06/current/XXXX/
-1099525,life stage,,>4th calendar year,,,http://vocab.nerc.ac.uk/collection/P06/current/XXXX/
+1099525,life stage,https://vocab.nerc.ac.uk/collection/P01/current/LSTAGE01/,>4th calendar year,,,http://vocab.nerc.ac.uk/collection/P06/current/XXXX/
 1099918,sex,http://vocab.nerc.ac.uk/collection/P01/current/ENTSEX01/,unknown,http://vocab.nerc.ac.uk/collection/S10/current/S105/,,http://vocab.nerc.ac.uk/collection/P06/current/XXXX/
-1099918,life stage,,pullus,,,http://vocab.nerc.ac.uk/collection/P06/current/XXXX/
+1099918,life stage,https://vocab.nerc.ac.uk/collection/P01/current/LSTAGE01/,pullus,,,http://vocab.nerc.ac.uk/collection/P06/current/XXXX/
 1099922,sex,http://vocab.nerc.ac.uk/collection/P01/current/ENTSEX01/,unknown,http://vocab.nerc.ac.uk/collection/S10/current/S105/,,http://vocab.nerc.ac.uk/collection/P06/current/XXXX/
-1099922,life stage,,pullus,,,http://vocab.nerc.ac.uk/collection/P06/current/XXXX/
+1099922,life stage,https://vocab.nerc.ac.uk/collection/P01/current/LSTAGE01/,pullus,,,http://vocab.nerc.ac.uk/collection/P06/current/XXXX/
 1099994,sex,http://vocab.nerc.ac.uk/collection/P01/current/ENTSEX01/,unknown,http://vocab.nerc.ac.uk/collection/S10/current/S105/,,http://vocab.nerc.ac.uk/collection/P06/current/XXXX/
-1099994,life stage,,pullus,,,http://vocab.nerc.ac.uk/collection/P06/current/XXXX/
+1099994,life stage,https://vocab.nerc.ac.uk/collection/P01/current/LSTAGE01/,pullus,,,http://vocab.nerc.ac.uk/collection/P06/current/XXXX/
 1099999,sex,http://vocab.nerc.ac.uk/collection/P01/current/ENTSEX01/,unknown,http://vocab.nerc.ac.uk/collection/S10/current/S105/,,http://vocab.nerc.ac.uk/collection/P06/current/XXXX/
-1099999,life stage,,pullus,,,http://vocab.nerc.ac.uk/collection/P06/current/XXXX/
+1099999,life stage,https://vocab.nerc.ac.uk/collection/P01/current/LSTAGE01/,pullus,,,http://vocab.nerc.ac.uk/collection/P06/current/XXXX/
 1100464,sex,http://vocab.nerc.ac.uk/collection/P01/current/ENTSEX01/,unknown,http://vocab.nerc.ac.uk/collection/S10/current/S105/,,http://vocab.nerc.ac.uk/collection/P06/current/XXXX/
-1100464,life stage,,pullus,,,http://vocab.nerc.ac.uk/collection/P06/current/XXXX/
+1100464,life stage,https://vocab.nerc.ac.uk/collection/P01/current/LSTAGE01/,pullus,,,http://vocab.nerc.ac.uk/collection/P06/current/XXXX/
 1101531,sex,http://vocab.nerc.ac.uk/collection/P01/current/ENTSEX01/,unknown,http://vocab.nerc.ac.uk/collection/S10/current/S105/,,http://vocab.nerc.ac.uk/collection/P06/current/XXXX/
-1101531,life stage,,pullus,,,http://vocab.nerc.ac.uk/collection/P06/current/XXXX/
+1101531,life stage,https://vocab.nerc.ac.uk/collection/P01/current/LSTAGE01/,pullus,,,http://vocab.nerc.ac.uk/collection/P06/current/XXXX/
 1101533,sex,http://vocab.nerc.ac.uk/collection/P01/current/ENTSEX01/,unknown,http://vocab.nerc.ac.uk/collection/S10/current/S105/,,http://vocab.nerc.ac.uk/collection/P06/current/XXXX/
-1101533,life stage,,pullus,,,http://vocab.nerc.ac.uk/collection/P06/current/XXXX/
+1101533,life stage,https://vocab.nerc.ac.uk/collection/P01/current/LSTAGE01/,pullus,,,http://vocab.nerc.ac.uk/collection/P06/current/XXXX/
 1103457,sex,http://vocab.nerc.ac.uk/collection/P01/current/ENTSEX01/,unknown,http://vocab.nerc.ac.uk/collection/S10/current/S105/,,http://vocab.nerc.ac.uk/collection/P06/current/XXXX/
-1103457,life stage,,pullus,,,http://vocab.nerc.ac.uk/collection/P06/current/XXXX/
+1103457,life stage,https://vocab.nerc.ac.uk/collection/P01/current/LSTAGE01/,pullus,,,http://vocab.nerc.ac.uk/collection/P06/current/XXXX/
 1103458,sex,http://vocab.nerc.ac.uk/collection/P01/current/ENTSEX01/,unknown,http://vocab.nerc.ac.uk/collection/S10/current/S105/,,http://vocab.nerc.ac.uk/collection/P06/current/XXXX/
-1103458,life stage,,pullus,,,http://vocab.nerc.ac.uk/collection/P06/current/XXXX/
+1103458,life stage,https://vocab.nerc.ac.uk/collection/P01/current/LSTAGE01/,pullus,,,http://vocab.nerc.ac.uk/collection/P06/current/XXXX/
 1103487,sex,http://vocab.nerc.ac.uk/collection/P01/current/ENTSEX01/,unknown,http://vocab.nerc.ac.uk/collection/S10/current/S105/,,http://vocab.nerc.ac.uk/collection/P06/current/XXXX/
-1103487,life stage,,pullus,,,http://vocab.nerc.ac.uk/collection/P06/current/XXXX/
+1103487,life stage,https://vocab.nerc.ac.uk/collection/P01/current/LSTAGE01/,pullus,,,http://vocab.nerc.ac.uk/collection/P06/current/XXXX/
 1103488,sex,http://vocab.nerc.ac.uk/collection/P01/current/ENTSEX01/,unknown,http://vocab.nerc.ac.uk/collection/S10/current/S105/,,http://vocab.nerc.ac.uk/collection/P06/current/XXXX/
-1103488,life stage,,pullus,,,http://vocab.nerc.ac.uk/collection/P06/current/XXXX/
+1103488,life stage,https://vocab.nerc.ac.uk/collection/P01/current/LSTAGE01/,pullus,,,http://vocab.nerc.ac.uk/collection/P06/current/XXXX/
 1103785,sex,http://vocab.nerc.ac.uk/collection/P01/current/ENTSEX01/,unknown,http://vocab.nerc.ac.uk/collection/S10/current/S105/,,http://vocab.nerc.ac.uk/collection/P06/current/XXXX/
-1103785,life stage,,pullus,,,http://vocab.nerc.ac.uk/collection/P06/current/XXXX/
+1103785,life stage,https://vocab.nerc.ac.uk/collection/P01/current/LSTAGE01/,pullus,,,http://vocab.nerc.ac.uk/collection/P06/current/XXXX/
 1104015,sex,http://vocab.nerc.ac.uk/collection/P01/current/ENTSEX01/,unknown,http://vocab.nerc.ac.uk/collection/S10/current/S105/,,http://vocab.nerc.ac.uk/collection/P06/current/XXXX/
-1104015,life stage,,pullus,,,http://vocab.nerc.ac.uk/collection/P06/current/XXXX/
+1104015,life stage,https://vocab.nerc.ac.uk/collection/P01/current/LSTAGE01/,pullus,,,http://vocab.nerc.ac.uk/collection/P06/current/XXXX/
 1104380,sex,http://vocab.nerc.ac.uk/collection/P01/current/ENTSEX01/,unknown,http://vocab.nerc.ac.uk/collection/S10/current/S105/,,http://vocab.nerc.ac.uk/collection/P06/current/XXXX/
-1104380,life stage,,pullus,,,http://vocab.nerc.ac.uk/collection/P06/current/XXXX/
+1104380,life stage,https://vocab.nerc.ac.uk/collection/P01/current/LSTAGE01/,pullus,,,http://vocab.nerc.ac.uk/collection/P06/current/XXXX/
 1104381,sex,http://vocab.nerc.ac.uk/collection/P01/current/ENTSEX01/,unknown,http://vocab.nerc.ac.uk/collection/S10/current/S105/,,http://vocab.nerc.ac.uk/collection/P06/current/XXXX/
-1104381,life stage,,pullus,,,http://vocab.nerc.ac.uk/collection/P06/current/XXXX/
+1104381,life stage,https://vocab.nerc.ac.uk/collection/P01/current/LSTAGE01/,pullus,,,http://vocab.nerc.ac.uk/collection/P06/current/XXXX/
 1106486,sex,http://vocab.nerc.ac.uk/collection/P01/current/ENTSEX01/,unknown,http://vocab.nerc.ac.uk/collection/S10/current/S105/,,http://vocab.nerc.ac.uk/collection/P06/current/XXXX/
-1106486,life stage,,pullus,,,http://vocab.nerc.ac.uk/collection/P06/current/XXXX/
+1106486,life stage,https://vocab.nerc.ac.uk/collection/P01/current/LSTAGE01/,pullus,,,http://vocab.nerc.ac.uk/collection/P06/current/XXXX/
 1106487,sex,http://vocab.nerc.ac.uk/collection/P01/current/ENTSEX01/,unknown,http://vocab.nerc.ac.uk/collection/S10/current/S105/,,http://vocab.nerc.ac.uk/collection/P06/current/XXXX/
-1106487,life stage,,pullus,,,http://vocab.nerc.ac.uk/collection/P06/current/XXXX/
+1106487,life stage,https://vocab.nerc.ac.uk/collection/P01/current/LSTAGE01/,pullus,,,http://vocab.nerc.ac.uk/collection/P06/current/XXXX/
 1106491,sex,http://vocab.nerc.ac.uk/collection/P01/current/ENTSEX01/,unknown,http://vocab.nerc.ac.uk/collection/S10/current/S105/,,http://vocab.nerc.ac.uk/collection/P06/current/XXXX/
-1106491,life stage,,pullus,,,http://vocab.nerc.ac.uk/collection/P06/current/XXXX/
+1106491,life stage,https://vocab.nerc.ac.uk/collection/P01/current/LSTAGE01/,pullus,,,http://vocab.nerc.ac.uk/collection/P06/current/XXXX/
 1106494,sex,http://vocab.nerc.ac.uk/collection/P01/current/ENTSEX01/,unknown,http://vocab.nerc.ac.uk/collection/S10/current/S105/,,http://vocab.nerc.ac.uk/collection/P06/current/XXXX/
-1106494,life stage,,pullus,,,http://vocab.nerc.ac.uk/collection/P06/current/XXXX/
+1106494,life stage,https://vocab.nerc.ac.uk/collection/P01/current/LSTAGE01/,pullus,,,http://vocab.nerc.ac.uk/collection/P06/current/XXXX/
 1106609,sex,http://vocab.nerc.ac.uk/collection/P01/current/ENTSEX01/,unknown,http://vocab.nerc.ac.uk/collection/S10/current/S105/,,http://vocab.nerc.ac.uk/collection/P06/current/XXXX/
-1106609,life stage,,pullus,,,http://vocab.nerc.ac.uk/collection/P06/current/XXXX/
+1106609,life stage,https://vocab.nerc.ac.uk/collection/P01/current/LSTAGE01/,pullus,,,http://vocab.nerc.ac.uk/collection/P06/current/XXXX/
 1106612,sex,http://vocab.nerc.ac.uk/collection/P01/current/ENTSEX01/,unknown,http://vocab.nerc.ac.uk/collection/S10/current/S105/,,http://vocab.nerc.ac.uk/collection/P06/current/XXXX/
-1106612,life stage,,pullus,,,http://vocab.nerc.ac.uk/collection/P06/current/XXXX/
+1106612,life stage,https://vocab.nerc.ac.uk/collection/P01/current/LSTAGE01/,pullus,,,http://vocab.nerc.ac.uk/collection/P06/current/XXXX/
 1106614,sex,http://vocab.nerc.ac.uk/collection/P01/current/ENTSEX01/,unknown,http://vocab.nerc.ac.uk/collection/S10/current/S105/,,http://vocab.nerc.ac.uk/collection/P06/current/XXXX/
-1106614,life stage,,pullus,,,http://vocab.nerc.ac.uk/collection/P06/current/XXXX/
+1106614,life stage,https://vocab.nerc.ac.uk/collection/P01/current/LSTAGE01/,pullus,,,http://vocab.nerc.ac.uk/collection/P06/current/XXXX/
 1106620,sex,http://vocab.nerc.ac.uk/collection/P01/current/ENTSEX01/,unknown,http://vocab.nerc.ac.uk/collection/S10/current/S105/,,http://vocab.nerc.ac.uk/collection/P06/current/XXXX/
-1106620,life stage,,pullus,,,http://vocab.nerc.ac.uk/collection/P06/current/XXXX/
+1106620,life stage,https://vocab.nerc.ac.uk/collection/P01/current/LSTAGE01/,pullus,,,http://vocab.nerc.ac.uk/collection/P06/current/XXXX/
 1110944,sex,http://vocab.nerc.ac.uk/collection/P01/current/ENTSEX01/,unknown,http://vocab.nerc.ac.uk/collection/S10/current/S105/,,http://vocab.nerc.ac.uk/collection/P06/current/XXXX/
-1110944,life stage,,pullus,,,http://vocab.nerc.ac.uk/collection/P06/current/XXXX/
+1110944,life stage,https://vocab.nerc.ac.uk/collection/P01/current/LSTAGE01/,pullus,,,http://vocab.nerc.ac.uk/collection/P06/current/XXXX/
 1110945,sex,http://vocab.nerc.ac.uk/collection/P01/current/ENTSEX01/,unknown,http://vocab.nerc.ac.uk/collection/S10/current/S105/,,http://vocab.nerc.ac.uk/collection/P06/current/XXXX/
-1110945,life stage,,pullus,,,http://vocab.nerc.ac.uk/collection/P06/current/XXXX/
+1110945,life stage,https://vocab.nerc.ac.uk/collection/P01/current/LSTAGE01/,pullus,,,http://vocab.nerc.ac.uk/collection/P06/current/XXXX/
 1114395,sex,http://vocab.nerc.ac.uk/collection/P01/current/ENTSEX01/,unknown,http://vocab.nerc.ac.uk/collection/S10/current/S105/,,http://vocab.nerc.ac.uk/collection/P06/current/XXXX/
-1114395,life stage,,pullus,,,http://vocab.nerc.ac.uk/collection/P06/current/XXXX/
+1114395,life stage,https://vocab.nerc.ac.uk/collection/P01/current/LSTAGE01/,pullus,,,http://vocab.nerc.ac.uk/collection/P06/current/XXXX/

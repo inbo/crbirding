@@ -39,7 +39,7 @@ create_ringing_emof <- function(ringing_occurrence) {
       occurrenceID = .data$occurrenceID,
       measurementType = "life stage",
       # https://euring.org/files/documents/data_and_codes/code-manuel_new-euring_1979.pdf
-      measurementTypeID = NA_character_,
+      measurementTypeID = "https://vocab.nerc.ac.uk/collection/P01/current/LSTAGE01/",
       measurementValue = dplyr::recode_values(
         .data$bird_age_ringing,
         "pullus" ~ "pullus",
