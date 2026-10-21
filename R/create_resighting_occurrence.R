@@ -16,7 +16,7 @@ create_resighting_occurrence <- function(data, ringing_ids) {
       # RECORD-LEVEL
       basisOfRecord = "HumanObservation",
       # OCCURRENCE
-      occurrenceID = as.character(.data$observation_id),
+      occurrenceID = .data$observation_id,
       sex = dplyr::recode_values(
         .data$bird_sex,
         "F" ~ "female",
@@ -36,7 +36,7 @@ create_resighting_occurrence <- function(data, ringing_ids) {
       # ORGANISM
       organismID = .data$bird_id,
       # EVENT
-      eventID = as.character(.data$observation_id),
+      eventID = .data$observation_id,
       parentEventID = paste(
         .data$bird_id, .data$bird_shorthand_clean,
         sep = "_"
