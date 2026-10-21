@@ -32,12 +32,12 @@ create_ringing_emof <- function(ringing_occurrence) {
       measurementUnitID = "http://vocab.nerc.ac.uk/collection/P06/current/XXXX/"
     )
 
-  bird_age <-
+  life_stage <-
     ringing_occurrence |>
     dplyr::mutate(
       .keep = "none",
       occurrenceID = .data$occurrenceID,
-      measurementType = "bird age",
+      measurementType = "life stage",
       # https://euring.org/files/documents/data_and_codes/code-manuel_new-euring_1979.pdf
       measurementTypeID = NA_character_,
       measurementValue = dplyr::recode_values(
@@ -58,7 +58,7 @@ create_ringing_emof <- function(ringing_occurrence) {
     )
 
   emof <-
-    dplyr::bind_rows(sex, bird_age) |>
+    dplyr::bind_rows(sex, life_stage) |>
     dplyr::arrange(.data$occurrenceID)
 
   # Remove the measurementType if all values of that type are NA
