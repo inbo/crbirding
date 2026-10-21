@@ -113,7 +113,6 @@ write_dwc <- function(data, directory, dataset_id = NULL,
       license = license,
       rightsHolder = rights_holder,
       datasetID = dataset_id,
-      institutionCode = "Sovon",
       collectionCode = "CR-Birding",
       datasetName = dataset_name,
       .before = "basisOfRecord"
