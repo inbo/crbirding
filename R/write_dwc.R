@@ -70,20 +70,9 @@ write_dwc <- function(data, directory, dataset_id = NULL,
                       license = NULL, rights_holder = NULL) {
   # Set properties to NA when missing
   dataset_id <- dataset_id %||% NA_character_
+  dataset_name <- dataset_name %||% NA_character_
   license <- license %||% NA_character_
   rights_holder <- rights_holder %||% NA_character_
-
-  # Check that dataset_name is a single value
-  if (length(dataset_name) != 1) {
-    cli::cli_abort(
-      c(
-        "i" = "{.var data} must be a single study with a single animal project
-        and a single {.var dataset_name}.",
-        "x" = "{.var dataset_name} has {length(dataset_name)} values."
-      ),
-      class = "crbirding_error_datasetname_invalid"
-    )
-  }
 
   # Clean and filter data
   data <-
