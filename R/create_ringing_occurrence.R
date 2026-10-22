@@ -54,7 +54,7 @@ create_ringing_occurrence <- function(data) {
       decimalLatitude = .data$observation_lat,
       decimalLongitude = .data$observation_lon,
       geodeticDatum = "WGS84",
-      coordinateUncertaintyInMeters = 100,
+      coordinateUncertaintyInMeters = 250,
       # IDENTIFICATION
       identificationVerificationStatus = "verified by expert",
       # TAXON

@@ -65,7 +65,7 @@ create_resighting_occurrence <- function(data, ringing_ids) {
       decimalLatitude = .data$observation_lat,
       decimalLongitude = .data$observation_lon,
       geodeticDatum = "WGS84",
-      coordinateUncertaintyInMeters = 100,
+      coordinateUncertaintyInMeters = 250,
       # IDENTIFICATION
       identificationVerificationStatus = dplyr::if_else(
         .data$observation_status == "trusted",
