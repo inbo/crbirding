@@ -18,10 +18,7 @@ create_ringing_occurrence <- function(data) {
       # RECORD-LEVEL
       basisOfRecord = "HumanObservation",
       # OCCURRENCE
-      occurrenceID = paste(
-        .data$bird_id, .data$bird_shorthand_clean, "start",
-        sep = "_" # Same as eventID
-      ),
+      occurrenceID = .data$observation_id, # Same as eventID
       sex = dplyr::recode_values(
         .data$bird_sex,
         "F" ~ "female",
@@ -42,10 +39,7 @@ create_ringing_occurrence <- function(data) {
       # ORGANISM
       organismID = .data$bird_id,
       # EVENT
-      eventID = paste(
-        .data$bird_id, .data$bird_shorthand_clean, "start",
-        sep = "_" # Same as occurrenceID
-      ),
+      eventID = .data$observation_id,
       parentEventID = paste(
         .data$bird_id, .data$bird_shorthand_clean,
         sep = "_"
@@ -60,6 +54,7 @@ create_ringing_occurrence <- function(data) {
       decimalLatitude = .data$observation_lat,
       decimalLongitude = .data$observation_lon,
       geodeticDatum = "WGS84",
+      coordinateUncertaintyInMeters = 250,
       # IDENTIFICATION
       identificationVerificationStatus = "verified by expert",
       # TAXON

@@ -16,7 +16,7 @@ create_resighting_occurrence <- function(data, ringing_ids) {
       # RECORD-LEVEL
       basisOfRecord = "HumanObservation",
       # OCCURRENCE
-      occurrenceID = as.character(.data$observation_id),
+      occurrenceID = .data$observation_id,
       sex = dplyr::recode_values(
         .data$bird_sex,
         "F" ~ "female",
@@ -25,7 +25,14 @@ create_resighting_occurrence <- function(data, ringing_ids) {
       ),
       lifeStage = dplyr::recode_values(
         .data$`custom:status full-grown bird`,
-        "not applicable (chick)" ~ "juvenile"
+        "not applicable (chick)" ~ "juvenile",
+        "unknown or unrecorded" ~ NA_character_,
+        "breeding bird" ~ NA_character_,
+        "not a breeding bird" ~ NA_character_,
+        "in colony, unknown if breeding" ~ NA_character_,
+        "in colony, not breeding" ~ NA_character_,
+        NA ~ NA_character_,
+        default = NA_character_
       ),
       reproductiveCondition = dplyr::recode_values(
         .data$`custom:status full-grown bird`,
@@ -36,7 +43,7 @@ create_resighting_occurrence <- function(data, ringing_ids) {
       # ORGANISM
       organismID = .data$bird_id,
       # EVENT
-      eventID = as.character(.data$observation_id),
+      eventID = .data$observation_id,
       parentEventID = paste(
         .data$bird_id, .data$bird_shorthand_clean,
         sep = "_"
@@ -58,6 +65,7 @@ create_resighting_occurrence <- function(data, ringing_ids) {
       decimalLatitude = .data$observation_lat,
       decimalLongitude = .data$observation_lon,
       geodeticDatum = "WGS84",
+      coordinateUncertaintyInMeters = 250,
       # IDENTIFICATION
       identificationVerificationStatus = dplyr::if_else(
         .data$observation_status == "trusted",
