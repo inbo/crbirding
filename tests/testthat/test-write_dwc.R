@@ -92,6 +92,7 @@ test_that("write_dwc() returns the expected Darwin Core mapping for the example
     write_dwc(
       data = data,
       directory = temp_dir,
+      # dataset_name: use default
       dataset_id = "https://submit.cr-birding.org/projects/37/",
       license = "cCC0-1.0",
       rights_holder = "INBO"
