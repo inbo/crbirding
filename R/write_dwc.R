@@ -12,7 +12,7 @@
 #'   Data are expected to be in English and from a single study.
 #' @param directory Path to local directory to write files to.
 #' @param dataset_id Identifier for the dataset.
-#' @param dataset_name Title of the dataset. Defaults to `animal_project`.
+#' @param dataset_name Title of the dataset, defaulting to `animal_project`.
 #' @param license License of the dataset.
 #' @param rights_holder Acronym of the organization owning or managing the
 #'   rights over the data.
