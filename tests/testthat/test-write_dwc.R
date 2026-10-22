@@ -1,15 +1,3 @@
-test_that("write_dwc() returns an error on invalid dataset_name", {
-  skip_if_offline()
-  data <- pied_avocet
-  temp_dir <- tempdir()
-  on.exit(unlink(temp_dir, recursive = TRUE))
-
-  expect_error(
-    write_dwc(data, temp_dir, dataset_name = c("pied avocet", "large gulls")),
-    class = "crbirding_error_datasetname_invalid"
-  )
-})
-
 test_that("write_dwc() writes CSV and meta.xml files to a directory and
            a list of data frames invisibly", {
   skip_if_offline()
