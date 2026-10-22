@@ -96,8 +96,8 @@ test_that("write_dwc() returns the expected Darwin Core mapping for the example
       dataset_id = "https://submit.cr-birding.org/projects/37/",
       license = "cCC0-1.0",
       rights_holder = "INBO"
-      )
     )
+  )
 
   expect_snapshot_file(file.path(temp_dir, "occurrence.csv"))
   expect_snapshot_file(file.path(temp_dir, "emof.csv"))
