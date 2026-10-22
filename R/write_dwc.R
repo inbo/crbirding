@@ -77,7 +77,7 @@ write_dwc <- function(data, directory, dataset_id = NULL,
   if (length(dataset_name) != 1) {
     cli::cli_abort(
       c(
-        "i" = "{.var data} must be a single study with a single animal project
+        "i" = "{.arg data} must be derived from a single project.
         and a single {.var dataset_name}.",
         "x" = "{.var dataset_name} has {length(dataset_name)} values."
       ),
