@@ -1,0 +1,10 @@
+url: https://inbo.github.io/crbirding/
+template:
+  bootstrap: 5
+reference:
+- title: Transform a CR-Birding dataset to Darwin Core
+  contents:
+  - has_concept("transformation functions")
+- title: Sample data
+  contents:
+  - has_concept("sample data")
