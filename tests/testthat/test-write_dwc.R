@@ -30,7 +30,6 @@ test_that("write_dwc() returns the expected Darwin Core terms as columns", {
       "license",
       "rightsHolder",
       "datasetID",
-      "institutionCode",
       "collectionCode",
       "datasetName",
       "basisOfRecord",
@@ -50,6 +49,7 @@ test_that("write_dwc() returns the expected Darwin Core terms as columns", {
       "decimalLatitude",
       "decimalLongitude",
       "geodeticDatum",
+      "coordinateUncertaintyInMeters",
       "identificationVerificationStatus",
       "scientificNameID",
       "scientificName",
@@ -76,7 +76,16 @@ test_that("write_dwc() returns the expected Darwin Core mapping for the example
   data <- pied_avocet
   temp_dir <- tempdir()
   on.exit(unlink(temp_dir, recursive = TRUE))
-  suppressMessages(write_dwc(data, temp_dir))
+  suppressMessages(
+    write_dwc(
+      data = data,
+      directory = temp_dir,
+      # dataset_name: use default
+      dataset_id = "https://submit.cr-birding.org/projects/37/",
+      license = "cCC0-1.0",
+      rights_holder = "INBO"
+    )
+  )
 
   expect_snapshot_file(file.path(temp_dir, "occurrence.csv"))
   expect_snapshot_file(file.path(temp_dir, "emof.csv"))

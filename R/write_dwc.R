@@ -12,7 +12,7 @@
 #'   Data are expected to be in English and from a single study.
 #' @param directory Path to local directory to write files to.
 #' @param dataset_id Identifier for the dataset.
-#' @param dataset_name Title of the dataset.
+#' @param dataset_name Title of the dataset. Defaults to `animal_project`.
 #' @param license License of the dataset.
 #' @param rights_holder Acronym of the organization owning or managing the
 #'   rights over the data.
@@ -65,7 +65,8 @@
 #'
 #' # Clean up (don't do this if you want to keep your files)
 #' unlink("my_directory", recursive = TRUE)
-write_dwc <- function(data, directory, dataset_id = NULL, dataset_name = NULL,
+write_dwc <- function(data, directory, dataset_id = NULL,
+                      dataset_name = unique(data$animal_project),
                       license = NULL, rights_holder = NULL) {
   # Set properties to NA when missing
   dataset_id <- dataset_id %||% NA_character_
@@ -101,7 +102,6 @@ write_dwc <- function(data, directory, dataset_id = NULL, dataset_name = NULL,
       license = license,
       rightsHolder = rights_holder,
       datasetID = dataset_id,
-      institutionCode = "Sovon",
       collectionCode = "CR-Birding",
       datasetName = dataset_name,
       .before = "basisOfRecord"
