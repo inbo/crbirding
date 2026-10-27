@@ -11,11 +11,12 @@ coverage](https://codecov.io/gh/inbo/crbirding/graph/badge.svg)](https://app.cod
 [![test-coverage](https://github.com/inbo/crbirding/actions/workflows/test-coverage.yaml/badge.svg)](https://github.com/inbo/crbirding/actions/workflows/test-coverage.yaml)
 <!-- badges: end -->
 
-crbirding is an r package to prepare bird colour ring data from European
-Colour-Ring Birding ([CR-Birding](https://submit.cr-birding.org/)) for
-publication to Global Biodiversity Information Facility
-([GBIF](https://www.gbif.org/)). With crbirding you can transform data
-exported from CR-birding to Darwin Core.
+crbirding is an R package to prepare colour-ringing data from
+([CR-Birding](https://submit.cr-birding.org/)) for publication in a
+research repository. With crbirding you can transform CR-Birding data to
+[Darwin Core](https://dwc.tdwg.org/) for publication to the Global
+Biodiversity Information Facility ([GBIF](https://www.gbif.org/) and the
+Ocean Biodiversity Information System ([OBIS](https://obis.org/))
 
 To get started, see the [function
 reference](https://inbo.github.io/crbirding/reference/index.html).
