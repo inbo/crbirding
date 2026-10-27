@@ -21,7 +21,10 @@ knitr::opts_chunk$set(
 [![test-coverage](https://github.com/inbo/crbirding/actions/workflows/test-coverage.yaml/badge.svg)](https://github.com/inbo/crbirding/actions/workflows/test-coverage.yaml)
 <!-- badges: end -->
 
-The goal of crbirding is to ...
+crbirding is an r package to prepare bird colour ring data from European Colour-Ring Birding ([CR-Birding](https://submit.cr-birding.org/)) for publication to Global Biodiversity Information Facility ([GBIF](https://www.gbif.org/)). With crbirding you can transform data exported from CR-birding to Darwin Core.
+
+To get started, see the [function reference](https://inbo.github.io/crbirding/reference/index.html).
+
 
 ## Installation
 
@@ -31,3 +34,14 @@ You can install the development version of crbirding from [GitHub](https://githu
 # install.packages("pak")
 pak::pak("inbo/crbirding")
 ```
+
+## Meta
+
+- We welcome
+  [contributions](https://inbo.github.io/crbirding/CONTRIBUTING.html)
+  including bug reports.
+- License: MIT
+- Get citation information for crbirding in R with `citation("crbirding")`.
+- Please note that this project is released with a [Contributor Code of
+  Conduct](https://inbo.github.io/crbirding/CODE_OF_CONDUCT.html). By
+  participating in this project you agree to abide by its terms.
