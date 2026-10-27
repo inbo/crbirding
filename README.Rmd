@@ -37,11 +37,7 @@ pak::pak("inbo/crbirding")
 
 ## Meta
 
-- We welcome
-  [contributions](https://inbo.github.io/crbirding/CONTRIBUTING.html)
-  including bug reports.
+- We welcome [contributions](https://inbo.github.io/crbirding/CONTRIBUTING.html) including bug reports.
 - License: MIT
 - Get citation information for crbirding in R with `citation("crbirding")`.
-- Please note that this project is released with a [Contributor Code of
-  Conduct](https://inbo.github.io/crbirding/CODE_OF_CONDUCT.html). By
-  participating in this project you agree to abide by its terms.
+- Please note that this project is released with a [Contributor Code of Conduct](https://inbo.github.io/crbirding/CODE_OF_CONDUCT.html). By participating in this project you agree to abide by its terms.
