@@ -18,10 +18,10 @@ clean_data <- function(data) {
       observation_lat = round(as.numeric(.data$observation_lat), digits = 6),
       observation_lon = round(as.numeric(.data$observation_lon), digits = 6),
       observation_is_capture = dplyr::if_else(
-        observation_is_capture == "Y", TRUE, FALSE
+        .data$observation_is_capture == "Y", TRUE, FALSE
       ),
       observation_is_certain = dplyr::if_else(
-        observation_is_certain == "Y", TRUE, FALSE
+        .data$observation_is_certain == "Y", TRUE, FALSE
       )
     ) |>
     # Add columns
@@ -87,7 +87,7 @@ clean_data <- function(data) {
     )
 
   # Get Aphia lsids for each scientific name
-  names <- dplyr::pull(dplyr::distinct(data, bird_scientific_name))
+  names <- dplyr::pull(dplyr::distinct(data, .data$bird_scientific_name))
   aphia_ids <-
     movepub::get_aphia_id(names) |>
     dplyr::select("name", "aphia_lsid") |>
