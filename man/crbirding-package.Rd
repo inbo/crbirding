@@ -4,7 +4,7 @@
 \name{crbirding-package}
 \alias{crbirding}
 \alias{crbirding-package}
-\title{crbirding: Prepare CR-Birding Data For Publication}
+\title{crbirding: Prepare CR-Birding Data for Publication}
 \description{
 Prepare colour-ringing data from 'CR-Birding' (\url{https://submit.cr-birding.org/}) for publication in a research repository. With 'crbirding' you can transform CR-Birding data to Darwin Core for publication to the Global Biodiversity Information Facility ('GBIF') and the Ocean Biodiversity Information System ('OBIS').
 }
