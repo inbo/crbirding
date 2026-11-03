@@ -8,7 +8,7 @@
   "codeRepository": "https://github.com/inbo/crbirding",
   "issueTracker": "https://github.com/inbo/crbirding/issues",
   "license": "https://spdx.org/licenses/MIT",
-  "version": "0.1.0",
+  "version": "0.1.0.9000",
   "programmingLanguage": {
     "@type": "ComputerLanguage",
     "name": "R",
@@ -40,7 +40,7 @@
   "funder": [
     {
       "@type": "Organization",
-      "name": "Netherlands Biodiversity Information Facility"
+      "name": "Netherlands Biodiversity Information Facility (NLBIF)"
     }
   ],
   "maintainer": [
@@ -149,7 +149,8 @@
     "5": {
       "@type": "SoftwareApplication",
       "identifier": "movepub",
-      "name": "movepub"
+      "name": "movepub",
+      "sameAs": "https://github.com/inbo/movepub"
     },
     "6": {
       "@type": "SoftwareApplication",
@@ -189,7 +190,7 @@
     },
     "SystemRequirements": null
   },
-  "fileSize": "326.272KB",
+  "fileSize": "326.518KB",
   "releaseNotes": "https://github.com/inbo/crbirding/blob/main/NEWS.md",
   "readme": "https://github.com/inbo/crbirding/blob/main/README.md",
   "contIntegration": ["https://github.com/inbo/crbirding/actions/workflows/R-CMD-check.yaml", "https://app.codecov.io/gh/inbo/crbirding", "https://github.com/inbo/crbirding/actions/workflows/test-coverage.yaml"],
