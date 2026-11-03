@@ -7,8 +7,8 @@ cff-version: 1.2.0
 message: 'To cite package "crbirding" in publications use:'
 type: software
 license: MIT
-title: 'crbirding: Prepare CR-Birding Data For Publication'
-version: 0.0.0.9000
+title: 'crbirding: Prepare CR-Birding Data for Publication'
+version: 0.1.0
 abstract: Prepare colour-ringing data from 'CR-Birding' (<https://submit.cr-birding.org/>)
   for publication in a research repository. With 'crbirding' you can transform CR-Birding
   data to Darwin Core for publication to the Global Biodiversity Information Facility
@@ -26,6 +26,7 @@ authors:
   affiliation: Research Institute for Nature and Forest (INBO)
 repository-code: https://github.com/inbo/crbirding
 url: https://inbo.github.io/crbirding/
+date-released: '2026-11-03'
 contact:
 - family-names: Govaert
   given-names: Sanne
