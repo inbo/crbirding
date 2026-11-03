@@ -1,7 +1,7 @@
 # crbirding
 
 crbirding is an R package to prepare colour-ringing data from
-([CR-Birding](https://submit.cr-birding.org/)) for publication in a
+[CR-Birding](https://submit.cr-birding.org/) for publication in a
 research repository. With crbirding you can transform CR-Birding data to
 [Darwin Core](https://dwc.tdwg.org/) for publication to the Global
 Biodiversity Information Facility ([GBIF](https://www.gbif.org/)) and

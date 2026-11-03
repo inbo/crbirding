@@ -1,4 +1,4 @@
-# crbirding: Prepare CR-Birding Data For Publication
+# crbirding: Prepare CR-Birding Data for Publication
 
 Prepare colour-ringing data from 'CR-Birding'
 (<https://submit.cr-birding.org/>) for publication in a research

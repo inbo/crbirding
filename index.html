@@ -5,12 +5,12 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<title>Prepare CR-Birding Data For Publication • crbirding</title>
+<title>Prepare CR-Birding Data for Publication • crbirding</title>
 <script src="deps/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <link href="deps/bootstrap-5.3.8/bootstrap.min.css" rel="stylesheet">
 <script src="deps/bootstrap-5.3.8/bootstrap.bundle.min.js"></script><link href="deps/font-awesome-6.5.2/css/all.min.css" rel="stylesheet">
 <link href="deps/font-awesome-6.5.2/css/v4-shims.min.css" rel="stylesheet">
-<script src="deps/headroom-0.11.0/headroom.min.js"></script><script src="deps/headroom-0.11.0/jQuery.headroom.min.js"></script><script src="deps/bootstrap-toc-1.0.1/bootstrap-toc.min.js"></script><script src="deps/clipboard.js-2.0.11/clipboard.min.js"></script><script src="deps/search-1.0.0/autocomplete.jquery.min.js"></script><script src="deps/search-1.0.0/fuse.min.js"></script><script src="deps/search-1.0.0/mark.min.js"></script><!-- pkgdown --><script src="pkgdown.js"></script><meta property="og:title" content="Prepare CR-Birding Data For Publication">
+<script src="deps/headroom-0.11.0/headroom.min.js"></script><script src="deps/headroom-0.11.0/jQuery.headroom.min.js"></script><script src="deps/bootstrap-toc-1.0.1/bootstrap-toc.min.js"></script><script src="deps/clipboard.js-2.0.11/clipboard.min.js"></script><script src="deps/search-1.0.0/autocomplete.jquery.min.js"></script><script src="deps/search-1.0.0/fuse.min.js"></script><script src="deps/search-1.0.0/mark.min.js"></script><!-- pkgdown --><script src="pkgdown.js"></script><meta property="og:title" content="Prepare CR-Birding Data for Publication">
 <meta name="description" content="Prepare colour-ringing data from CR-Birding (&lt;https://submit.cr-birding.org/&gt;) for publication in a research repository. With crbirding you can transform CR-Birding data to Darwin Core for publication to the Global Biodiversity Information Facility (GBIF) and the Ocean Biodiversity Information System (OBIS).">
 <meta property="og:description" content="Prepare colour-ringing data from CR-Birding (&lt;https://submit.cr-birding.org/&gt;) for publication in a research repository. With crbirding you can transform CR-Birding data to Darwin Core for publication to the Global Biodiversity Information Facility (GBIF) and the Ocean Biodiversity Information System (OBIS).">
 </head>
@@ -22,7 +22,7 @@
 
     <a class="navbar-brand me-2" href="index.html">crbirding</a>
 
-    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.0.0.9000</small>
+    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.1.0.9000</small>
 
 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -51,7 +51,7 @@
 </h1></div>
 <!-- badges: start -->
 
-<p>crbirding is an R package to prepare colour-ringing data from (<a href="https://submit.cr-birding.org/" class="external-link">CR-Birding</a>) for publication in a research repository. With crbirding you can transform CR-Birding data to <a href="https://dwc.tdwg.org/" class="external-link">Darwin Core</a> for publication to the Global Biodiversity Information Facility (<a href="https://www.gbif.org/" class="external-link">GBIF</a>) and the Ocean Biodiversity Information System (<a href="https://obis.org/" class="external-link">OBIS</a>).</p>
+<p>crbirding is an R package to prepare colour-ringing data from <a href="https://submit.cr-birding.org/" class="external-link">CR-Birding</a> for publication in a research repository. With crbirding you can transform CR-Birding data to <a href="https://dwc.tdwg.org/" class="external-link">Darwin Core</a> for publication to the Global Biodiversity Information Facility (<a href="https://www.gbif.org/" class="external-link">GBIF</a>) and the Ocean Biodiversity Information System (<a href="https://obis.org/" class="external-link">OBIS</a>).</p>
 <p>To get started, see the <a href="https://inbo.github.io/crbirding/reference/index.html">function reference</a>.</p>
 <div class="section level2">
 <h2 id="installation">Installation<a class="anchor" aria-label="anchor" href="#installation"></a>
@@ -109,7 +109,7 @@
 <ul class="list-unstyled">
 <li>Sanne Govaert <br><small class="roles"> Author, maintainer </small> <a href="https://orcid.org/0000-0002-8939-1305" target="orcid.widget" aria-label="ORCID" class="external-link"><span class="fab fa-orcid orcid" aria-hidden="true"></span></a>  </li>
 <li>Peter Desmet <br><small class="roles"> Author </small> <a href="https://orcid.org/0000-0002-8442-8025" target="orcid.widget" aria-label="ORCID" class="external-link"><span class="fab fa-orcid orcid" aria-hidden="true"></span></a>  </li>
-<li>Netherlands Biodiversity Information Facility <br><small class="roles"> Funder </small>   </li>
+<li>Netherlands Biodiversity Information Facility (NLBIF) <br><small class="roles"> Funder </small>   </li>
 <li><a href="authors.html">More about authors...</a></li>
 </ul>
 </div>
@@ -120,6 +120,7 @@
 <li><a href="https://github.com/inbo/crbirding/actions/workflows/R-CMD-check.yaml" class="external-link"><img src="https://github.com/inbo/crbirding/actions/workflows/R-CMD-check.yaml/badge.svg" alt="R-CMD-check"></a></li>
 <li><a href="https://app.codecov.io/gh/inbo/crbirding" class="external-link"><img src="https://codecov.io/gh/inbo/crbirding/graph/badge.svg" alt="Codecov test coverage"></a></li>
 <li><a href="https://github.com/inbo/crbirding/actions/workflows/test-coverage.yaml" class="external-link"><img src="https://github.com/inbo/crbirding/actions/workflows/test-coverage.yaml/badge.svg" alt="test-coverage"></a></li>
+<li><a href="https://doi.org/10.5281/zenodo.23919916" class="external-link"><img src="https://zenodo.org/badge/DOI/10.5281/zenodo.23919916.svg" alt="DOI"></a></li>
 </ul>
 </div>
 
@@ -128,7 +129,7 @@
 
 
     <footer><div class="pkgdown-footer-left">
-  <p>Developed by Sanne Govaert, Peter Desmet, Netherlands Biodiversity Information Facility.</p>
+  <p>Developed by Sanne Govaert, Peter Desmet, Netherlands Biodiversity Information Facility (NLBIF).</p>
 </div>
 
 <div class="pkgdown-footer-right">
