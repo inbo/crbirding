@@ -1,6 +1,6 @@
 Package: crbirding
 Title: Prepare CR-Birding Data For Publication
-Version: 0.0.0.9000
+Version: 0.1.0
 Date: 2026-11-03
 Authors@R: c(
     person("Sanne", "Govaert", , "sanne.govaert@inbo.be", role = c("aut", "cre"),
