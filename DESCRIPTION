@@ -38,7 +38,5 @@ Suggests:
     testthat (>= 3.0.0),
     xml2
 Config/testthat/edition: 3
-Remotes: 
-    inbo/movepub
 URL: https://github.com/inbo/crbirding, https://inbo.github.io/crbirding/
 BugReports: https://github.com/inbo/crbirding/issues
